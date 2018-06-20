@@ -1,118 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>VS - Interactive Fronte End Project</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/vendor/dc.min.css">
-    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <script src="js/main.js"></script>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Veronique Savard - CI_InteractiveFrontend </title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/tooltip.css">
+    <link rel="stylesheet" href="css/dc.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="wh-100 jumbotron">
-        <h1>Interactive Front End Project</h1>
+    <header id="top-title" class="wh-100 jumbotron">
+        <h1>VS - Interactive Front End Project</h1>
+
     </header>
-    <navbar class="container-fluid">
-        <div class="col">
-            <h2>Where do you want to go?</h2>
-        </div>
-        <div class="col">
-            <ul>
-                <li>Top</li>
-                <li>Visualisation 1</li>
-                <li>Visualisation 2</li>
-                <li>Visualisation 3</li>
-                <li>Bottom</li>
-            </ul>
-        </div>
-    </navbar>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5 py-4">
+        <div class="container-fluid justify-content-between">
+            <h2>
+                Gallup Poll - World Happiness</h1>
+                <h3 class="navbar">2015 - 2017 dataset</h3>
+   
+    </nav>
+
+
     <main>
-        <div class="container">
-            <div class="section">
-                <div class="card">
-                    <div class="card-header">About this project</div>
+      
+    </main>
+    <footer class="container-fluid mt-4">
+        <div class="row bg-info">
 
-                    <div class="card-body">
-                        <div class="card-title">Movies between 1899 and 2013</div>
-                        <div class="card-text">Supporting data / Data injected into the visualisation</div>
-                        <div class="card-text">Possible manipulation of the visualisation / Potential observations</div>
-                    </div>
-                </div>
+            <div class="col-3 px-4 mt-4">
+                <p>
+                 <a href="https://www.kaggle.com/unsdsn/world-happiness/data" target="_blank"><button class="btn btn-sm btn-warning">data found on kaggle (link)</button></a>
+                </p>
             </div>
-            <div class="section container">
-                <div class="row">
-                    <div class="col"></div>
-                    <div id="chart-area1">
-                        (content here)
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-header">
-                                Legend
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Item 1</li>
-                                <li class="list-group-item">Item 2</li>
-                                <li class="list-group-item">Item 3</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div id="chart-area2">
-                        (content here)
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-header">
-                                Legend
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Item 1</li>
-                                <li class="list-group-item">Item 2</li>
-                                <li class="list-group-item">Item 3</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="chart-area3">
-                        (content here)
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-header">
-                                Legend
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Item 1</li>
-                                <li class="list-group-item">Item 2</li>
-                                <li class="list-group-item">Item 3</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-3 px-4 mt-4">
+                <p>usage of d3.js, dc.js, crossfilter, jquery libraries</p>
+            </div>
+            <div class="col-3 px-4 mt-4">
+                <button class="btn btn-sm btn-light"><a href="https://github.com/nuagesdencre/CI_InteractiveFrontend" target="">Return to Project Page</a></button>
+            </div>
+            <div class="col-3 px-4 mt-4">
+                <p>reference to website nuagesdencre</p>
             </div>
         </div>
-    </main>
-    <footer class="wh-100">
-        <p>reference to github nuagesdencre</p>
-        <p>reference to website nuagesdencre</p>
-
     </footer>
+
+
+    <!-- External JS libraries -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <script src="js/vendor/d3.min.js"></script>
+    <script src="js/vendor/crossfilter.min.js"></script>
+    <script src="js/vendor/dc.min.js"></script>
+    <script src="js/vendor/queue.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
 </body>
-
-<!-- to clean up following scope of project -->
-<script src="js/vendor/jquery-3.3.1.min.js"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/vendor/d3.min.js"></script>
-<script src="js/vendor/crossfilter.min.js"></script>
-<script src="js/vendor/dc.min.js"></script>
-<script src="js/vendor/chart.min.js"></script>
-
-
-
 
 </html>
