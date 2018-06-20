@@ -1,5 +1,5 @@
 # VS - Interactive Frontend Project
-
+## https://nuagesdencre.github.io/CI_InteractiveFrontend/
 ## Data Dashboard Creation
 #### Frontend-only website
 Build a data dashboard that visualizes a dataset of your choice
@@ -13,13 +13,16 @@ Visualise your data using D3.js and dc.js
 
 [ ] Incorporate links or buttons to allow your user to navigate the site and reset/control the site functionality.
 
-[ ] Use semantic HTML5 elements to structure your HTML code better.
+[x] Use semantic HTML5 elements to structure your HTML code better.
 
 [ ] Make sure your site is as responsive as possible. You can test this by checking the site on different screen sizes and browsers. Please note that if you are building a data dashboard, only your chart containers are expected to be responsive. Charts using D3.js are not responsive as they are designed for desktop or large-screen viewing.
 
-[ ] Write down user stories and create wireframes/mockups before embarking on full-blown development.
+[x] Write down user stories and create wireframes/mockups before embarking on full-blown development.
 
-[ ] The site can also make use of CSS frameworks such as Bootstrap, just make sure you maintain a clear separation between the library code and your code.
+* [User stories here! (wip)](stories/userstories.xlsx)
+* [Mockup here!](datadashboard.png)
+
+[x] The site can also make use of CSS frameworks such as Bootstrap, just make sure you maintain a clear separation between the library code and your code.
 
 [ ] You should conduct and document tests to ensure that all of your website's functionality works well.
 
