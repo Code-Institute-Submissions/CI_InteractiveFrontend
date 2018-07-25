@@ -1,47 +1,32 @@
-function print_filter(filter) {
-    var f = eval(filter);
-    if (typeof f.length != "undefined") {
-    } else {
-    }
-    if (typeof f.top != "undefined") {
-      f = f.top(Infinity);
-    } else {
-    }
-    if (typeof f.dimension != "undefined") {
-      f = f
-        .dimension(function(d) {
-          return "";
-        })
-        .top(Infinity);
-    } else {
-    }
-    console.log(
-      filter +
-        "(" +
-        f.length +
-        ") = " +
-        JSON.stringify(f)
-          .replace("[", "[\n\t")
-          .replace(/}\,/g, "},\n\t")
-          .replace("]", "\n]")
-    );
-  }
+
   
   var q = queue().defer(d3.json, "data/cat_breeds.json");
-  q.await(dataSet);
+  q.await(initGraphs);
   
   var data;
   var ndx;
   var all;
   
-  function dataSet(error, d) {
+
+  function initData(d, callback) {
     data = d;
-    makeGraphs(error, d);
+    if (typeof callback == "function") {
+      callback(data);
+    }
   }
   
-  function makeGraphs(error, cat_breeds) {
-    ndx = crossfilter(cat_breeds);
+  function initGraphs(error, data) {
+    if (error) {
+      console.log(error);
+    } else {
+      initData(data, makeGraphs);
+    }
+  }
   
+  
+  
+  function makeGraphs(cat_breeds) {
+    ndx = crossfilter(cat_breeds);
     show_barchart(ndx);
     show_datatable(ndx);
     show_piechart1(ndx);
@@ -88,7 +73,7 @@ var datacount = dc.dataCount("#count_field");
       .width(500)
       .height(300)
       .dimension(dim)
-      .group(group)
+      .group(group).on("filtered", chartCallback)
       .margins({ top: 10, right: 40, bottom: 100, left: 20 })
       .xUnits(dc.units.ordinal)
       .x(
@@ -190,6 +175,7 @@ var datacount = dc.dataCount("#count_field");
       .transitionDuration(1500)
       .dimension(dim)
       .group(group)
+      .on("filtered", chartCallback)
       .legend(
         dc
           .legend()
@@ -223,6 +209,7 @@ var datacount = dc.dataCount("#count_field");
       .transitionDuration(1500)
       .dimension(dim)
       .group(group)
+      .on("filtered", chartCallback)
       .legend(
         dc
           .legend()
@@ -255,7 +242,7 @@ var datacount = dc.dataCount("#count_field");
       })
       .transitionDuration(1500)
       .dimension(dim)
-      .group(group)
+      .group(group).on("filtered", chartCallback)
       .legend(
         dc
           .legend()
@@ -299,7 +286,7 @@ function search_bar(ndx) {
     var selection = dc
       .selectMenu("#select-cat-type")
       .dimension(dim)
-      .group(group);
+      .group(group).on("filtered", chartCallback);
     selection.title(function(d) {
       return d.key;
     });
@@ -337,25 +324,37 @@ function search_bar(ndx) {
     d3.select("#begin").text(ofs + 1);
     d3.select("#end").text(ofs + pag);
     d3.select("#previous").attr("disabled", ofs - pag < 0 ? "true" : null);
-    d3.select("#next").attr("disabled", ofs + pag >= ndx.size() ? "true" : null);
-  // TODO: change ndx.size() to the number of filtered items
-    ;
+    
   
   
   }
-  function update() {
-    dataTable.beginSlice(ofs);
-    dataTable.endSlice(ofs + pag);
-    display();
-  }
-  function next() {
+  
+function update() {
+  dataTable.beginSlice(ofs);
+  dataTable.endSlice(ofs + pag);
+  display();
+}
+
+function next() {
+  if (ofs + pag < Math.ceil(ndx.allFiltered().length / 5) * 5) {
     ofs += pag;
     update();
     dataTable.redraw();
   }
+}
   function last() {
     ofs -= pag;
     update();
     dataTable.redraw();
   }
   
+  
+function reset() {
+  ofs = 0;
+  update();
+  dataTable.redraw();
+}
+
+function chartCallback() {
+  reset();
+}
