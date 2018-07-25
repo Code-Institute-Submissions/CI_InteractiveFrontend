@@ -10,6 +10,18 @@ a {
   color: #000;
 }
 
+h1,
+h2,
+h3,
+h4,
+th {
+  font-family: "Concert One";
+}
+
+h4 {
+  float: left;
+}
+
 #top-title {
   margin: 0;
   border-radius: 0;
@@ -41,3 +53,187 @@ a {
   );
   text-shadow: 2px 2px 8px #fff;
 }
+
+
+.dc-select-menu {
+    border-color: transparent;
+    background-color: transparent;
+    cursor: default;
+    border: none;
+  }
+  
+  .dc-chart .pie-slice {
+    font-size: 0.8em;
+  }
+  
+  #rotating-item-wrapper {
+    position: relative;
+    max-width: 900px;
+  }
+  
+  .rotating-item {
+    display: none;
+    box-sizing: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  img {
+    padding: 4px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+  }
+  
+  /*Quotes*/
+  #cat_quotes {
+    padding: 20px;
+    transform: skew(10deg);
+    letter-spacing: 0.1em;
+  }
+
+
+  /*Quotes*/
+#cat_quotes {
+    padding: 20px;
+    transform: skew(10deg);
+    letter-spacing: 0.1em;
+  }
+  /*Table*/
+  
+  .dc-table-head {
+    margin-top: 2px;
+    font-size: 1.3em;
+    font-weight: 400;
+  }
+  table {
+    border-collapse: collapse;
+    margin: 10px;
+  }
+  
+  table thead tr,
+  table tbody tr {
+    line-height: 2;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  table thead tr {
+    background-color: #72c2da;
+    line-height: 2;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  td {
+    padding: 20px;
+    margin: 10px;
+    display: table-cell;
+  }
+  
+  td.dc-table-column._0 {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  table tbody tr:hover {
+    background-color: #cfedfd;
+    cursor: context-menu;
+  }
+  /* barchart */
+  
+  #barchart > svg > g > g.axis.x text {
+    transform: rotate(20deg) translateY(10px) translateX(10px);
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9998;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: initial;
+    -webkit-animation-name: fadeModal;
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeModal;
+    animation-duration: 0.4s;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    font-size: 0.9em;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-animation-name: slideModal;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideModal;
+    animation-duration: 0.4s;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  .modal-header,
+  .modal-footer {
+    color: white;
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes slideModal {
+    from {
+      bottom: -300px;
+      opacity: 0;
+    }
+    to {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideModal {
+    from {
+      bottom: -300px;
+      opacity: 0;
+    }
+    to {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes fadeModal {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeModal {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
