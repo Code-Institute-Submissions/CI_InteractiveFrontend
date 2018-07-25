@@ -147,7 +147,7 @@ var datacount = dc.dataCount("#count_field");
           format: function(d) {
             return (
               d["fun_fact"] +
-              '<div class="py-4"><button class="btn btn-light btn-sm my-4"><a href target="_blank" src="https://en.wikipedia.org/wiki/' +
+              '<div class="py-4"> <button class="btn btn-light btn-sm my-4"><a target="_blank" href="https://en.wikipedia.org/wiki/' +
               d["breed"] +
               '"> Learn more</a> </button></div>'
             );
