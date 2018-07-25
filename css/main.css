@@ -1,0 +1,43 @@
+/*Typography*/
+@import url("https://fonts.googleapis.com/css?family=Concert+One|Open+Sans:300,400");
+* {
+  font-family: "Open Sans";
+}
+
+a:hover,
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#top-title {
+  margin: 0;
+  border-radius: 0;
+  color: #fff;
+}
+#top_quote {
+  transform: skew(20deg);
+  letter-spacing: 0.2em;
+  font-size: 5.5em;
+  text-shadow: 1px 1px 1px #17a2b8;
+}
+#project_id {
+  color: rgb(23, 162, 184);
+}
+
+/*Body*/
+
+.bg-cats1 {
+  background: url("/img/bg/bg1.svg") no-repeat;
+}
+.bg-cats2 {
+  background: url("/img/bg/bg3.svg") no-repeat;
+}
+.over-img {
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.733),
+    rgba(255, 255, 255, 0.87)
+  );
+  text-shadow: 2px 2px 8px #fff;
+}
