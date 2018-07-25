@@ -28,10 +28,10 @@ a {
 /*Body*/
 
 .bg-cats1 {
-  background: url("/img/bg/bg1.svg") no-repeat;
+  background: url("../img/bg/bg1.svg") no-repeat;
 }
 .bg-cats2 {
-  background: url("/img/bg/bg3.svg") no-repeat;
+  background: url("../img/bg/bg3.svg") no-repeat;
 }
 .over-img {
   background: linear-gradient(
