@@ -1,0 +1,866 @@
+[
+  {
+    "breed": "Abyssinian",
+    "country": "Ethiopia",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Ticked",
+    "image": "../img/abyssinian.png",
+    "fun_fact": "Abyssinians are a popular breed thanks in large part to their unusual intelligence and generally extroverted, playful, willful personalities."
+  },
+  {
+    "breed": "Aegean Cat",
+    "country": "Greece",
+    "origin": "Natural",
+    "coat": "Semi-long",
+    "pattern": "Bi- or tri-colored",
+    "image": "../img/aegean.png",
+    "fun_fact": "In Greece, Aegean cats are considered a national treasure. It is considered to be the only native Greek variety of cat."
+  },
+  {
+    "breed": "American Curl",
+    "country": "United States",
+    "origin": "Mutation",
+    "coat": "Short to Long",
+    "pattern": "Varied",
+    "image": "../img/americancurl.png",
+    "fun_fact": "American Curl kittens are born with straight ears, which begin to curl within forty-eight hours. After four months, their ears will not curl any longer"
+  },
+  {
+    "breed": "American Bobtail",
+    "country": "United States",
+    "origin": "Mutation",
+    "coat": "Short to Long",
+    "pattern": "Varied",
+    "image": "../img/americanbobtail.png",
+    "fun_fact": "The unusual tail is actually the result of a random spontaneous genetic mutation within the domestic cat population, and may be related to the Manx gene, which is also dominant."
+  },
+  {
+    "breed": "American Shorthair",
+    "country": "United States",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Varied but never colorpoint",
+    "image": "../img/americanshorthair.png",
+    "fun_fact": "The American Shorthair (ASH) is a breed of domestic cat believed to be descended from European cats brought to North America by early settlers to protect valuable cargo from mice and rats."
+  },
+  {
+    "breed": "American Wirehair",
+    "country": "United States",
+    "origin": "Mutation",
+    "coat": "Rex",
+    "pattern": "All but colorpoint",
+    "image": "../img/americanwirehair.png",
+    "fun_fact": "Wirehairs have golden eyes, except for some white ones that have blue or amber eyes."
+  },
+  {
+    "breed": "Arabian Mau",
+    "country": "Arabian Peninsula",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Varied",
+    "image": "../img/arabianmau.png",
+    "fun_fact": "The Arabian Mau gets along very well with elder children and other animals. Arabian Maus have a very high meow that can sometimes come across as demanding."
+  },
+  {
+    "breed": "Australian Mist",
+    "country": "Australia",
+    "origin": "Crossbreed",
+    "coat": "Short",
+    "pattern": "Spotted and Classic tabby",
+    "image": "../img/australianmist.png",
+    "fun_fact": "Australian Mists do not require much brushing because they lose little hair. The coat patterns have three aspects: the ground colour, which is paler than the pattern; the pattern; and the appearance of wearing a misted veil, caused by random ticking in the solid colour areas."
+  },
+  {
+    "breed": "Asian",
+    "country": "United Kingdom",
+    "origin": "Unknown",
+    "coat": "Short",
+    "pattern": "Evenly solid",
+    "image": "../img/asian.png",
+    "fun_fact": "Owners should note that these cats demand an owner who will pay attention to it, interact with it, and always hug and hold them frequently"
+  },
+  {
+    "breed": "Asian Semi-longhair",
+    "country": "United Kingdom",
+    "origin": "Crossbreed",
+    "coat": "Semi-long",
+    "pattern": "Solid",
+    "image": "../img/asiansemilonghair.png",
+    "fun_fact": "Cats of this breed are attached to their owners, but do not always get along with other cats, since they can be quite jealous."
+  },
+  {
+    "breed": "Balinese",
+    "country": "United States",
+    "origin": "Crossbreed",
+    "coat": "Long",
+    "pattern": "Colorpoint",
+    "image": "../img/balinese.png",
+    "fun_fact": "Anecdotally, Balinese are claimed to cause many fewer problems with allergies than most breeds. While strict scientific evidence for this is lacking, it has been determined that, in comparison to most cats, the Balinese produces very low amounts of the Fel d1 and Fel d4 protein allergens."
+  },
+  {
+    "breed": "Bambino",
+    "country": "United States",
+    "origin": "Crossbreed",
+    "coat": "Hairless",
+    "pattern": "Varied",
+    "image": "../img/bambino.png",
+    "fun_fact": "The Bambino is a breed of cat that was created as a cross between the Sphynx and the Munchkin breeds. The Bambino cat has short legs, large upright ears, and is usually hairless. However, some Bambino cats do have fur."
+  },
+  {
+    "breed": "Bengal",
+    "country": "United States",
+    "origin": "Hybrid",
+    "coat": "Short",
+    "pattern": "Spotted/Marbled",
+    "image": "../img/bengal.png",
+    "fun_fact": "Bengal cats have wild-looking markings, such as large spots, rosettes, and a light/white belly, and a body structure reminiscent of the leopard cat."
+  },
+  {
+    "breed": "Birman",
+    "country": "Burma",
+    "origin": "Natural",
+    "coat": "Semi-long",
+    "pattern": "Colorpoint",
+    "image": "../img/birman.png",
+    "fun_fact": "No clear record of the breed's origin exists. They are most often claimed to have originated as the companions of temple priests in northern Burma in the Mount of Lugh."
+  },
+  {
+    "breed": "Bombay",
+    "country": "United States",
+    "origin": "Crossbred",
+    "coat": "Short",
+    "pattern": "Solid",
+    "image": "../img/bombay.png",
+    "fun_fact": "Bombay cats are typically characterized as having an all black coat, black soles, black nose and mouth, with copper or green eyes. The close-lying, sleek and glossy black coat is generally coloured to the roots, with little or no paling."
+  },
+  {
+    "breed": "Brazilian Shorthair",
+    "country": "Brazil",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Varied",
+    "image": "../img/brazilianshorthair.png",
+    "fun_fact": "It is the first cat breed from Brazil to receive international recognition."
+  },
+  {
+    "breed": "British Shorthair",
+    "country": "United Kingdom",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Varied",
+    "image": "../img/britishshorthair.png",
+    "fun_fact": "Happycat (arguably the first lolcat, and also known as the 'I Can Has Cheezburger?' cat), a male British Blue, is the star of a meme started on the Something Awful forums. The original picture apparently came from the front page of happycat.ru, a Russian cat food company."
+  },
+  {
+    "breed": "British Longhair",
+    "country": "United Kingdom",
+    "origin": "Unknown",
+    "coat": "Long",
+    "pattern": "Varied",
+    "image": "../img/britishlonghair.png",
+    "fun_fact": "British Longhairs can be prone to obesity if neutered or kept as indoor-only cats. Like most longer-haired cats, they require brushing or are prone to matting. Autumn and winter are the seasons when they have the highest risk of tangles because their coat thickens in preparation for winter."
+  },
+  {
+    "breed": "Burmese",
+    "country": "Burma",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Solid",
+    "image": "../img/burmese.png",
+    "fun_fact": "Most modern Burmese are descendants of one female cat called Wong Mau, which was brought from Burma to America in 1930 and bred with American Siamese."
+  },
+  {
+    "breed": "Burmilla",
+    "country": "United Kingdom",
+    "origin": "Crossbreed",
+    "coat": "Short to Long",
+    "pattern": "Varied",
+    "image": "../img/burmilla.png",
+    "fun_fact": "The Burmilla is quite an irreverent and independent cat who adores its owner and displays many kitten-like characteristics even into adulthood. In temperament they are sociable, playful, and affectionate, and get along well with children and other animals."
+  },
+  {
+    "breed": "California Spangled",
+    "country": "United States",
+    "origin": "Crossbreed",
+    "coat": "Short",
+    "pattern": "Spotted",
+    "image": "../img/californiaspangled.png",
+    "fun_fact": "Originally bred by Paul Arnold Casey, Jr., a Hollywood scriptwriter, playwright, and author, after his return from Tanzania while working with Louis Leakey in the 1970s. Casey's novel, 'Open The Coffin' chronicles his journey in Africa and subsequent breeding that led to the California Spangle.    This animal was ideally bred to resemble a leopard, thus giving the impression of a 'House-Leopard'. One of many motivations for this breed was that people would not want to wear the same type of fur that resembled their pet."
+  },
+  {
+    "breed": "Chantilly-Tiffany",
+    "country": "United States",
+    "origin": "Unknown",
+    "coat": "Short to Long",
+    "pattern": "Varied",
+    "image": "../img/chantillytiffany.png",
+    "fun_fact": "Some Chantilly-Tiffanys' overgroom. They tend to pull their own hair, which can lead to patches of baldness and the formation of digestive tract hairballs. To help prevent this, brush the cat at least every other day to help control loose and shedding hair."
+  },
+  {
+    "breed": "Chartreux",
+    "country": "France",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Solid",
+    "image": "../img/chartreux.png",
+    "fun_fact": "The mascot of the world's largest jazz festival, the Montreal International Jazz Festival, is a blue Chartreux affectionately named 'Ste Cat', after the festival's hub, Sainte Catherine Street in Montreal."
+  },
+  {
+    "breed": "Chausie",
+    "country": "France",
+    "origin": "Hybrid",
+    "coat": "Short",
+    "pattern": "Ticked",
+    "image": "../img/chausie.png",
+    "fun_fact": "The Chausie is a domestic breed of cat that was developed by breeding a few individuals from the nondomestic species jungle cat (Felis chaus) to a far greater number of domestic cats (Felis catus). Because breeders outcrossed the foundation jungle cats to mostly intelligent, outgoing breeds such as the Abyssinian and Oriental Shorthair, Chausies are intelligent, active, athletic cats."
+  },
+  {
+    "breed": "Cheetoh",
+    "country": "United States",
+    "origin": "Hybrid",
+    "coat": "Short",
+    "pattern": "Spotted",
+    "image": "../img/bengal.png",
+    "fun_fact": "The Cheetoh cat is an ongoing program to crossbreed two existing breeds of spotted domestic cats with defined characteristics (the Bengal and the Ocicat), and develop the result into a third standardized breed that is distinct from both of the foundation breeds."
+  },
+  {
+    "breed": "Colorpoint Shorthair",
+    "country": "Unknown",
+    "origin": "Unknown",
+    "coat": "Short",
+    "pattern": "Varied",
+    "image": "../img/colorpointshorthair.png",
+    "fun_fact": "Colorpoint Shorthairs are a variety of domestic cat. Depending on the cat registry, they may be considered a separate breed of cat, or more often a variant of a pre-existing one, if accepted at all."
+  },
+  {
+    "breed": "Cornish Rex",
+    "country": "United Kingdom",
+    "origin": "Mutation",
+    "coat": "Rex",
+    "pattern": "Varied",
+    "image": "../img/cornishrex.png",
+    "fun_fact": "Most breeds of cat have three different types of hair in their coats: the outer fur or guard hairs, a middle layer called the awn hair; and the down hair or undercoat, which is very fine and about 1 cm long. Cornish Rexes only have the undercoat. Cornish Rex are prone to hair loss and many will develop a very thin coat or even go bald over large parts of their body."
+  },
+  {
+    "breed": "Cymric or Manx Longhair",
+    "country": "Isle of Man",
+    "origin": "Natural",
+    "coat": "Long",
+    "pattern": "Varied",
+    "image": "../img/cymric.png",
+    "fun_fact": "Some cat registries consider the Cymric simply a semi-long-haired variety of the Manx breed, rather than a separate breed. Except for the length of fur, in all other respects the two varieties are the same, and kittens of either sort may appear in the same litter. "
+  },
+  {
+    "breed": "Cyprus",
+    "country": "Cyprus",
+    "origin": "Natural",
+    "coat": "Short to Long",
+    "pattern": "Varied",
+    "image": "../img/cypruscat.png",
+    "fun_fact": "The Cyprus cats are grouped into two subspecies namely Aphrodite Giant and Saint Helen Cat. On 1st July 2012, the Aphrodite cat became a fully recognised breed of the World Cat Federation."
+  },
+  {
+    "breed": "Devon Rex",
+    "country": "United Kingdom",
+    "origin": "Mutation",
+    "coat": "Rex",
+    "pattern": "Varied",
+    "image": "../img/devonrex.png",
+    "fun_fact": "The curl in Devon Rex fur is caused by a different mutation and gene than that of the Cornish Rex and German Rex, and breeding of a Devon with either of those cats results in cats without rexed (curled) fur. Devons, which are medium-sized cats, are often called pixie cats or alien cats because of their unique appearance. "
+  },
+  {
+    "breed": "Donskoy, or Don Sphynx",
+    "country": "Russia",
+    "origin": "Unknown",
+    "coat": "Hairless",
+    "pattern": "Varied",
+    "image": "../img/donskoy.png",
+    "fun_fact": "Not all cat registries recognise the Donskoy and there are some concerns about the genetic health of the breed."
+  },
+  {
+    "breed": "Dragon Li",
+    "country": "China",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Striped tabby",
+    "image": "../img/dragonli.png",
+    "fun_fact": "Since gaining international recognition, and due in part to its limited availability, the Dragon Li / Chinese Li Hua has now become a focus of attention the world over.[5] In popular culture, the Chinese literary legend Li Mao Huan Tai Zi (The Cat for Crown Prince Conspiracy) utilizes a Li Hua Mao as its central theme, and has more recently served as the basis for a China-based television series."
+  },
+  {
+    "breed": "Dwarf cat, or Dwelf",
+    "country": "Unknown",
+    "origin": "Crossbreed",
+    "coat": "Short to Long",
+    "pattern": "Hairless",
+    "image": "../img/dwelf.png",
+    "fun_fact": "The Dwelf cat is a hairless, short-legged, curl-eared breed of cat derived from Sphynx, American Curl, and Munchkin stock."
+  },
+  {
+    "breed": "Egyptian Mau",
+    "country": "Egypt",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Spotted",
+    "image": "../img/egyptianmau.png",
+    "fun_fact": "Egyptian Maus will have either a 'scarab beetle' or 'M' marking on their foreheads."
+  },
+  {
+    "breed": "European Shorthair",
+    "country": "Finland",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Varied",
+    "image": "../img/europeanshorthair.png",
+    "fun_fact": "The European Shorthair, called the European in FIFe and WCF is a breed originating in Europe. The term has also been used as an elaborate way of referring to common domestic cats of Europe, causing some confusion as the pedigree cats of this breed also should resemble the typical domestic cats of Europe. "
+  },
+  {
+    "breed": "Exotic Shorthair",
+    "country": "United States",
+    "origin": "Crossbreed",
+    "coat": "Short",
+    "pattern": "Varied",
+    "image": "../img/exoticshorthair.png",
+    "fun_fact": "The Exotic Shorthair is a breed of cat developed to be a short-haired version of the Persian. The Exotic is similar to the Persian in many ways, including temperament and conformation, a flat nose and face with the exceptions of the short dense coat. "
+  },
+  {
+    "breed": "Foldex",
+    "country": "Canada",
+    "origin": "Crossbreed",
+    "coat": "Short",
+    "pattern": "Varied",
+    "image": "../img/foldex.png",
+    "fun_fact": "The Foldex developed in the province of Quebec, Canada. It was originally produced by breeding from a Scottish Fold with an Exotic Shorthair, resulting in a cat with a temperate fold to its ears. The long haired version of this cat would be referred to as PerFold."
+  },
+  {
+    "breed": "German Rex",
+    "country": "Germany",
+    "origin": "Mutation",
+    "coat": "Rex",
+    "pattern": "Varied",
+    "image": "../img/germanrex.png",
+    "fun_fact": "A German Rex cat is very friendly and quickly bonds with its owner. It is lively, playful, and intelligent. Its temperament is much the same as a Cornish Rex."
+  },
+  {
+    "breed": "Havana Brown",
+    "country": "United Kingdom",
+    "origin": "Unknown",
+    "coat": "Short",
+    "pattern": "Solid",
+    "image": "../img/havanabrown.png",
+    "fun_fact": "The Havana Brown was the result of a planned breeding between Siamese and domestic black cats,[1] by a group of cat fanciers in England, in the 1950s. Early breeders introduced a Siamese type Russian Blue into their breeding. However, using current genetic testing, it is believed that almost none remain in the gene pool."
+  },
+  {
+    "breed": "Highlander",
+    "country": "United States",
+    "origin": "Crossbreed",
+    "coat": "Short to Long",
+    "pattern": "Varied",
+    "image": "../img/highlander.png",
+    "fun_fact": "The Highlander originated as a crossbreed of the experimental Desert Lynx breed and the Jungle Curl, to add the latter's curled ears to the former. As with Desert Lynxes, they are bobtailed or short-tailed, have spotted or marbled markings, and resemble the bobcat."
+  },
+  {
+    "breed": "Himalayan, or Colorpoint Persian",
+    "country": "United States",
+    "origin": "Crossbreed",
+    "coat": "Long",
+    "pattern": "Colorpoint",
+    "image": "../img/himalayan.png",
+    "fun_fact": " Like the Siamese, Himalayans love to play fetch, and a scrap of crumpled paper or a kitty toy will entertain them for hours. Himalayans are devoted and dependent upon their humans for companionship and protection. They crave affection and love to be petted and groomed."
+  },
+  {
+    "breed": "Japanese Bobtail",
+    "country": "Japan",
+    "origin": "Natural",
+    "coat": "Short to Long",
+    "pattern": "All but colorpoint and ticked",
+    "image": "../img/japanesebobtail.png",
+    "fun_fact": "The Japanese Bobtail is a breed of domestic cat with an unusual bobbed tail more closely resembling the tail of a rabbit than that of other cats. The maneki neko ('beckoning cat' or 'inviting cat'), an image of a Japanese Bobtail seated with one paw raised, is considered a good-luck charm among the Japanese around the world, who often keep a statue of this figure in the front of stores or homes (most often a stylized calico, though gold and black variants are also common). This stems from a legend that tells how a man (usually either a priest or member of the royal family) who owned one of these cats looked up one day to see his cat beckoning to him."
+  },
+  {
+    "breed": "Javanese",
+    "country": "United States",
+    "origin": "Crossbreed",
+    "coat": "Short to Long",
+    "pattern": "Colorpoint",
+    "image": "../img/nuagesdencre.png",
+    "fun_fact": "The Javanese, also known as the Colorpoint (or Colourpoint) Longhair in some registries (though that name has other meanings), is a variety of purebred domestic cat. It is an Oriental-type, the long-haired equivalent of the Colorpoint Shorthair."
+  },
+  {
+    "breed": "Karelian Bobtail",
+    "country": "Russia",
+    "origin": "Natural",
+    "coat": "Short to Long",
+    "pattern": "Varied",
+    "image": "../img/karelianbobtail.png",
+    "fun_fact": "The Karelian Bobtail is a rare, beautiful, and unique feline breed from the Republic of Karelia, which is located between Finland and Russia."
+  },
+  {
+    "breed": "Khao Manee",
+    "country": "Thailand",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Solid",
+    "image": "../img/khaomanee.png",
+    "fun_fact": "The Khao Manee is an ancient cat breed comparable to the Siamese, Korat and other Thailand cat breeds. The Khao Manee is mentioned in the Tamra Maew, or Cat Book Poems, that as well mention the Siamese cat breed and other coat colored cats endemic to the country Thailand or Siam as it was previously known. Khao Manee cats are pure white with a short, smooth, close-lying coat"
+  },
+  {
+    "breed": "Korat",
+    "country": "Thailand",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Solid",
+    "image": "../img/korat.png",
+    "fun_fact": "The Korat is known colloquially as the good luck cat. Traditionally, they are given in pairs to newlyweds or people who are highly esteemed, for good luck. Until recently, Korats were not sold, but only given as gifts."
+  },
+  {
+    "breed": "Korean Bobtail",
+    "country": "Korea",
+    "origin": "Natural",
+    "coat": "Short to Long",
+    "pattern": "Colorprint",
+    "image": "../img/nuagesdencre.png",
+    "fun_fact": "More than one gene is responsible for tail suppression in cats; research is incomplete, but it is known that the Japanese Bobtail and related breeds have a different mutation from that found in the Manx and its derivatives. The Korean bobtails' tails are short and kinked, but not entirely absent"
+  },
+  {
+    "breed": "Korn Ja",
+    "country": "Thailand",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Solid",
+    "image": "../img/kornja.png",
+    "fun_fact": "This is a small-sized cat with a delicate built. This makes him more suited for indoor living. This small size has been a factor to his popularity as he is described as delicate, teeny, and bitsy."
+  },
+  {
+    "breed": "Kurilian Bobtail, or Kuril Islands Bobtail",
+    "country": "Russia",
+    "origin": "Natural",
+    "coat": "Short to Long",
+    "pattern": "Varied",
+    "image": "../img/kurilianbobtail.png",
+    "fun_fact": "The Kurilian Bobtail is a cat breed (or breed group, depending on registry) originating from the Kuril Islands, as well as Sakhalin Island and the Kamchatka peninsula of Russia."
+  },
+  {
+    "breed": "LaPerm",
+    "country": "United States",
+    "origin": "Mutation",
+    "coat": "Rex",
+    "pattern": "Varied",
+    "image": "../img/laperm.png",
+    "fun_fact": "A LaPerm's fur is curly (hence the name 'perm'), with the tightest curls being on the belly, throat and base of the ears. LaPerms come in many colors and patterns. LaPerms generally have a very affectionate personality."
+  },
+  {
+    "breed": "Lykoi",
+    "country": "United States",
+    "origin": "Natural",
+    "coat": "Partly Hairless",
+    "pattern": "Ticked",
+    "image": "../img/lykoi.png",
+    "fun_fact": "The Lykoi, also called the Werewolf cat, is a natural mutation from a domestic short-haired cat that has the appearance of a classic Hollywood werewolf, hence its name. The word lykoi means 'wolves' in Greek."
+  },
+  {
+    "breed": "Maine Coon",
+    "country": "United States",
+    "origin": "Natural",
+    "coat": "Long",
+    "pattern": "All but colorpoint and ticked",
+    "image": "../img/mainecoon.png",
+    "fun_fact": "The Maine Coon is the largest breed of domestic cat. On average, males weigh from 13 to 18 lb (5.9 to 8.2 kg) with females weighing from 8 to 12 lb (3.6 to 5.4 kg). It has a distinctive physical appearance and valuable hunting skills. It is one of the oldest natural breeds in North America, specifically native to the state of Maine,[3] where it is the official state cat."
+  },
+  {
+    "breed": "Manx",
+    "country": "Isle of Man",
+    "origin": "Mutation",
+    "coat": "Short to Long",
+    "pattern": "All but colorpoint",
+    "image": "../img/manx.png",
+    "fun_fact": "Many Manx have a small stub of a tail, but Manx cats are best known as being entirely tailless; this is the most distinguishing characteristic of the breed, along with elongated hind legs and a rounded head. An old local term for the cats on their home island is 'stubbin'."
+  },
+  {
+    "breed": "Mekong Bobtail",
+    "country": "Russia",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Colorpoint",
+    "image": "../img/mekong.png",
+    "fun_fact": "More than one gene is responsible for tail suppression in cats; the Mekong Bobtail has a characteristic short tail and Siamese points colouring. The coat is short."
+  },
+  {
+    "breed": "Minskin",
+    "country": "United States",
+    "origin": "Crossbreed",
+    "coat": "Short/Hairless",
+    "pattern": "Varied",
+    "image": "../img/minskin.png",
+    "fun_fact": "The Minskin is a breed of cat derived from crossing the Munchkin with the Sphynx. Since it is a cross with the same breeds, it is sometimes confused with a Bambino cat. "
+  },
+  {
+    "breed": "Munchkin",
+    "country": "United States",
+    "origin": "Mutation",
+    "coat": "Short to Long",
+    "pattern": "Varied",
+    "image": "../img/munchkin.png",
+    "fun_fact": "The Munchkin or Sausage Cat is a new breed of cat characterized by its very short legs, which are caused by a genetic mutation. In 2014, Lilieput, a Munchkin cat from Napa, California, was named the shortest statured living cat in the world by Guinness World Records. She stands 5.25 inches (13.34 centimeters) tall. "
+  },
+  {
+    "breed": "Nebelung",
+    "country": "United States",
+    "origin": "Unknown",
+    "coat": "Semi-long",
+    "pattern": "Solid",
+    "image": "../img/nebelung.png",
+    "fun_fact": "The name Nebelung — apparently a portmanteau of the German word Nebel ('mist' or 'fog'), and the name of a medieval Germanic saga, Nibelungenlied — is perhaps derived from the cat's distinctive silky blue-grey coat and from the breed's progenitors, who were named after the two major figures in the Nibelungenlied, the German warrior Siegfried and the Icelandic queen Brunhilde."
+  },
+  {
+    "breed": "Napoleon",
+    "country": "Unknown",
+    "origin": "Unknown",
+    "coat": "Short to Long",
+    "pattern": "Varied",
+    "image": "../img/napoleon.png",
+    "fun_fact": "The Napoleon inherited its distinctively short legs from the Munchkin, which, in that breed, were caused by a naturally occurring genetic mutation. The short legs do not hinder the cat's agility. They are able to run, jump, and play easily. From the Persian group (including Persians, Exotic Shorthairs and Himalayans) the Napoleon has inherited its round face, eyes, dense coat and substantial boning. The boning provides a good support system for its uniquely short legs. The Napoleon is not merely a short-legged Persian nor a hairy Munchkin. It is a unique combination of these two groups, making it easily distinguishable from any other breed of cat."
+  },
+  {
+    "breed": "Norwegian Forest cat",
+    "country": "Norway",
+    "origin": "Natural",
+    "coat": "Long",
+    "pattern": "All but colorpoint",
+    "image": "../img/norwegian.png",
+    "fun_fact": "The Norwegian Forest cat is adapted to survive Norway's cold weather. Its ancestors may include black and white shorthair cats brought to Norway from Great Britain some time after 1000 AD by the Vikings, and longhaired cats brought to Norway by Crusaders."
+  },
+  {
+    "breed": "Ocicat",
+    "country": "United States",
+    "origin": "Crossbreed",
+    "coat": "Short",
+    "pattern": "Spotted",
+    "image": "../img/ocicat.png",
+    "fun_fact": "The Ocicat is an all-domestic breed of cat which resembles a wild cat but has no wild DNA in its gene pool. The breed is unusual in that it is spotted like a wild cat but has the temperament of a domestic animal. It is named for its resemblance to the Ocelot."
+  },
+  {
+    "breed": "Ojos Azules",
+    "country": "United States",
+    "origin": "Unknown",
+    "coat": "Short to Long",
+    "pattern": "Varied",
+    "image": "../img/ojosazules.png",
+    "fun_fact": "Ojos Azules are a very rare breed. The first cat of that type was found in 1980 In 1992, only ten were known. The breed, in both short and long hair variety, was accepted for registration by TICA in 1991. The TICA Ojos Azules Breed Group Standard is dated 5 January 2004. Only cats expressing the deep blue eye gene have been called Ojos Azules. It was recently discovered that cranial defects may be linked to the gene, and breeding was temporarily suspended."
+  },
+  {
+    "breed": "Oregon Rex",
+    "country": "United States",
+    "origin": "Mutation",
+    "coat": "Rex",
+    "pattern": "Varied",
+    "image": "../img/devonrex.png",
+    "fun_fact": "The Oregon Rex was one of several breeds of domestic cat with the rex coat variation, which in the mid-20th-century occurred from spontaneous genetic mutation. After its acknowledgment as a separate breed, it enjoyed a short time of popularity among cat breeders in the United States. By now, due to crossbreeding with other Rex types, this breed seems to have merged with the other more popular Rex breeds like Devon Rex or Cornish Rex."
+  },
+  {
+    "breed": "Oriental Bicolor",
+    "country": "United States",
+    "origin": "Unknown",
+    "coat": "Short to Long",
+    "pattern": "Bicolor",
+    "image": "../img/orientalbicolor.png",
+    "fun_fact": "The Oriental Bicolour is any cat of Oriental type, either longhaired or shorthaired and in any pattern including colourpoint, which has white areas on its coat caused by the white spotting gene."
+  },
+  {
+    "breed": "Oriental Shorthair",
+    "country": "United States",
+    "origin": "Unknown",
+    "coat": "Short",
+    "pattern": "All but colorpoint",
+    "image": "../img/orientalshorthair.png",
+    "fun_fact": "The Oriental Shorthair is a breed of domestic cat that is closely related to the Siamese. It maintains the modern Siamese head and body type but appears in a wide range of coat colors and patterns. Like the Siamese, Orientals have almond-shaped eyes, a triangular head shape, large ears, and an elongated, slender, and muscular body."
+  },
+  {
+    "breed": "Oriental Longhair",
+    "country": "United States",
+    "origin": "Unknown",
+    "coat": "Semi-long",
+    "pattern": "Varied",
+    "image": "../img/orientallonghair.png",
+    "fun_fact": "If an Oriental Longhair is bred to an Oriental shorthair or a Siamese, the kittens will all be short-haired. This is because the gene for long hair is recessive. The kittens will, however, be a variant, a carrier of the long-hair gene. If such a 'variant' is bred to a cat with long hair, or to another variant, they may produce both short-haired and long-haired kittens."
+  },
+  {
+    "breed": "PerFold (Experimental Breed - WCF)",
+    "country": "Europe",
+    "origin": "Crossbreed",
+    "coat": "Long",
+    "pattern": "Varied",
+    "image": "../img/nuagesdencre.png",
+    "fun_fact": "The Perfold is the result of selective breeding between Persians cats with Highland and Scottish Fold cats."
+  },
+  {
+    "breed": "Persian (Modern Persian Cat)",
+    "country": "Iran",
+    "origin": "Natural",
+    "coat": "Long",
+    "pattern": "Varied",
+    "image": "../img/persian.png",
+    "fun_fact": "The Persian cat is a long-haired breed of cat characterized by its round face and short muzzle. It is also known as the Persian Longhair in the English-speaking countries. In the Middle East region, they are widely known as Iranian cat and in Iran they are known as Shirazi cat. The first documented ancestors of the Persian were imported into Italy from Iran (historically known as Persia) around 1620. The exact history of the Persian cat does seem to be a bit of a mystery but many of these long-haired cats were seen in hieroglyphics."
+  },
+  {
+    "breed": "Peterbald",
+    "country": "Russia",
+    "origin": "Crossbreed",
+    "coat": "Hairless",
+    "pattern": "Varied",
+    "image": "../img/peterbald.png",
+    "fun_fact": "The Peterbald is a cat breed of Russian origin. It was created in St Petersburg in 1994 from an experimental breeding by Olga S. Mironova. They resemble Oriental Shorthairs with a hair-losing gene."
+  },
+  {
+    "breed": "Pixie-bob",
+    "country": "United States",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Spotted",
+    "image": "../img/pixiebob.png",
+    "fun_fact": "The Pixie-bob is a breed of domestic cat claimed to be the progeny of naturally occurring bobcat hybrids. However, DNA testing has failed to detect bobcat marker genes,[1] and Pixie-bobs are considered wholly domestic for the purposes of ownership, cat fancy registration, and import and export."
+  },
+  {
+    "breed": "Raas",
+    "country": "Indonesia",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Varied",
+    "image": "../img/raas.png",
+    "fun_fact": "The Raas cat is endemic of domestic cat breed originating from Raas Island, Indonesia. They are not exported out of their island."
+  },
+  {
+    "breed": "Ragamuffin",
+    "country": "United States",
+    "origin": "Crossbreed",
+    "coat": "Long",
+    "pattern": "Varied",
+    "image": "../img/ragamuffin.png",
+    "fun_fact": "The Ragamuffin is a crossbreed of the Ragdoll with various other breeds, mostly Persian and its offshoot, Himalayan."
+  },
+  {
+    "breed": "Ragdoll",
+    "country": "United States",
+    "origin": "Crossbreed",
+    "coat": "Long",
+    "pattern": "Colorpoint/Mitted/Bicolor",
+    "image": "../img/ragdoll.png",
+    "fun_fact": "The name 'Ragdoll' is derived from the tendency of individuals from the original breeding stock to go limp and relaxed when picked up.[2] Particularly popular in both the United Kingdom and the breed's native United States, ragdoll cats often are known as 'dog-like cats' or 'puppy-like cats' due to behaviors such as their tendency to follow people around, their ease at being physically handled, and their relative lack of aggression toward other pets."
+  },
+  {
+    "breed": "Russian Blue",
+    "country": "Russia",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Solid",
+    "image": "../img/russianblue.png",
+    "fun_fact": "The Russian Blue is a cat breed that comes in colors varying from a light shimmering silver to a darker, slate grey. They develop close bonds with their owners and are sought out as pets due to their personalities, beauty and coat. It is their short, dense coat which has been the hallmark of the Russian breed for more than a century. The dense coat stands out from the body and one can draw patterns in the coat that will stay until one smoothes them out again. They are also considered to be hypoallergenic."
+  },
+  {
+    "breed": "Russian White, Black and Tabby",
+    "country": "Australia",
+    "origin": "Crossbreed",
+    "coat": "Short",
+    "pattern": "Varied",
+    "image": "../img/nuagesdencre.png",
+    "fun_fact": "The Russian White, Russian Black, and Russian Tabby are breeds of cat created in 1971, derived from the Russian Blue. The Black and Tabby Russians came from the original mating which created the Russian White."
+  },
+  {
+    "breed": "Sam Sawet",
+    "country": "Thailand",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Solid",
+    "image": "../img/korat.png",
+    "fun_fact": "The Sam Sawet (Thai: แซมเศวต) is a natural breed of cat that originated in Thailand. This breed has not yet been recognized by any major cat registries. It is a new discovery with undetermined breed standards."
+  },
+  {
+    "breed": "Savannah",
+    "country": "United States",
+    "origin": "Hybrid",
+    "coat": "Short",
+    "pattern": "Spotted",
+    "image": "../img/savannah.png",
+    "fun_fact": "A Savannah cat is a cross between a domestic cat and a serval, a medium-sized, large-eared wild African cat. The Australian Federal government has banned the importation into Australia of the Savannah cat, as the larger cats could potentially threaten species of the country's native wildlife not threatened by smaller domestic cats."
+  },
+  {
+    "breed": "Scottish Fold",
+    "country": "United Kingdom",
+    "origin": "Natural",
+    "coat": "Short to Long",
+    "pattern": "Varied",
+    "image": "../img/scottishfold.png",
+    "fun_fact": "All Folds are born with straight, unfolded ears, and those with the Fold gene will begin to show the fold usually within about 21 days. The kittens that do not develop folded ears are known as 'Straights'.The original cats only had one fold in their ears, but due to selective breeding, breeders have increased the fold to a double or triple crease that causes the ear to lie totally flat against the head."
+  },
+  {
+    "breed": "Selkirk Rex",
+    "country": "United States",
+    "origin": "Mutation",
+    "coat": "Rex",
+    "pattern": "Varied",
+    "image": "../img/selkirkrex.png",
+    "fun_fact": "The Selkirk Rex is distinct from all other Rex breeds. Unlike the Devon Rex and Cornish Rex, the hair is of normal length and not partly missing. There are longhair and shorthair varieties. It differs from the LaPerm in that the Selkirk Rex coat is plusher and thicker. "
+  },
+  {
+    "breed": "Serengeti",
+    "country": "United States",
+    "origin": "Hybrid",
+    "coat": "Short",
+    "pattern": "Spotted",
+    "image": "../img/serengeti.png",
+    "fun_fact": "The Serengeti is a breed of domestic cat, first developed by crossing a Bengal (domestic and wild hybrid) and an Oriental Shorthair."
+  },
+  {
+    "breed": "Serrade petit",
+    "country": "France",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Varied",
+    "image": "../img/serrade.png",
+    "fun_fact": "The Serrade petit is a natural breed of cat that originated in France. This breed has not yet been recognized by any major cat registries. It is a new discovery with undetermined breed standards. It is known to be a small cat, usually between 6 and 9 pounds"
+  },
+  {
+    "breed": "Siamese",
+    "country": "Thailand",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Colorpoint",
+    "image": "../img/siamese.png",
+    "fun_fact": "Siamese cats, due to their desire to be near people or other cats, occasionally suffer from depression if left alone for long periods of time, and it is for this reason that Siamese cats are often bought in pairs so that they can keep each other company."
+  },
+  {
+    "breed": "Siberian",
+    "country": "Russia",
+    "origin": "Natural",
+    "coat": "Semi-long",
+    "pattern": "Varied",
+    "image": "../img/siberian.png",
+    "fun_fact": "The Siberian cat is an ancient breed that is now believed to be ancestral to all modern long-haired cats.[3] The cat has similarities with the Norwegian forest cat, to which it is likely closely related. It is a natural breed of Siberia and the national cat of Russia."
+  },
+  {
+    "breed": "Singapura",
+    "country": "Singapore",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Ticked",
+    "image": "../img/singa.png",
+    "fun_fact": "The Singapura is one of the smallest breeds of cats, noted for its large eyes and ears, brown ticked coat and blunt tail. Reportedly established from three 'drain cats' imported from Singapore in the 1970s, it was later revealed that the cats were originally sent to Singapore from the US before they were exported back to the US."
+  },
+  {
+    "breed": "Snowshoe",
+    "country": "United States",
+    "origin": "Crossbreed",
+    "coat": "Short",
+    "pattern": "Colorpoint",
+    "image": "../img/snowshoe.png",
+    "fun_fact": "The internet celebrity Grumpy Cat is a mixed-breed cat with possible snowshoe traces"
+  },
+  {
+    "breed": "Sokoke",
+    "country": "Kenya",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Classic tabby with ticking",
+    "image": "../img/sokoke.png",
+    "fun_fact": "The Sokoke is a 'natural breed', i.e., one developed and standardised from the local, free-breeding landrace population, and thus distinct from it by virtue of careful selective breeding for specific, fixed traits believed to epitomise the distinctions evolved by natural selection in the original population"
+  },
+  {
+    "breed": "Somali",
+    "country": "Somalia",
+    "origin": "Mutation",
+    "coat": "Long",
+    "pattern": "Ticked",
+    "image": "../img/somali.png",
+    "fun_fact": "The Somalis are recognized for their bushy tails, large almond eyes, and large pointed ears, earning the breed its nickname of 'Fox Cat.' Their ticked coats, containing between four and twenty colors on each hair, are very fine in texture, making their coats softer to the touch. The cat itself is medium-large in size."
+  },
+  {
+    "breed": "Sphynx",
+    "country": "Canada",
+    "origin": "Mutation",
+    "coat": "Hairless",
+    "pattern": "Varied",
+    "image": "../img/sphynx.png",
+    "fun_fact": "The Sphynx cat is a breed of cat known for its lack of coat (fur). It was developed through selective breeding, starting in the 1960s. The skin should have the texture of chamois, as it has fine hairs. Whiskers may be present, either whole or broken, or may be totally absent. Their skin is the color that their fur would be, and all the usual cat markings (solid, point, van, tabby, tortie, etc.) may be found on the Sphynx cat's skin. Because they have no coat, they lose more body heat than coated cats. This makes them warm to the touch as well as heat-seeking."
+  },
+  {
+    "breed": "Suphalak",
+    "country": "Thailand",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Solid",
+    "image": "../img/suphalak.png",
+    "fun_fact": "The Suphalak's eye color is a bright yellow/gold color, described in the Tamra Maew shining and sprinkling sun rays. It is a natural breed and should not be confused with the sable Burmese cat, an established American and European created breed which expresses the colorpoint Burmese gene (cb) that results in a dark points on the extremities such as the ears, feet and tail as well as a dark mask on the face"
+  },
+  {
+    "breed": "Thai",
+    "country": "Thailand",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Colorpoint",
+    "image": "../img/thai.png",
+    "fun_fact": "The Thai cat or Wichien Maat (Thai: wichianmat, meaning 'moon diamond') is a newly renamed but old cat breed, related to but distinct from the Western, modern Siamese cat. This natural breed is descended from the landrace of wichianmat cats of Thailand, and as a standardised breed has also been variously called the Old-style, Old-type, Traditional, or Classic Siamese; the Whichian Mat (anglicised from the Thai name); and the Applehead, a nickname that originated as a pejorative used by breeders of the modern-style Siamese."
+  },
+  {
+    "breed": "Thai Lilac",
+    "country": "Thailand",
+    "origin": "Natural",
+    "coat": "Short",
+    "pattern": "Solid",
+    "image": "../img/thaililac.png",
+    "fun_fact": "The Governing Council of the Cat Fancy (GCCF, UK) recognizes Korat type cats differing from the traditional solid blue appearance of the Korat on their experimental register. Such cats are registered as: Thai Lilac, if solid lilac. A Thai Blue Point exhibits the colour-point pattern also seen in Siamese. A Thai Lilac Point also exhibits the colour-point pattern seen in Siamese, but in addition exhibits the Chocolate gene. "
+  },
+  {
+    "breed": "Tonkinese",
+    "country": "Canada",
+    "origin": "Crossbreed",
+    "coat": "Short",
+    "pattern": "Colorpoint/Mink/Solid",
+    "image": "../img/tonkinese.png",
+    "fun_fact": "Tonkinese are a domestic cat breed produced by crossbreeding between the Siamese and Burmese. Like both parent breeds, Tonkinese are intelligent, active, vocal and generally people-oriented cats, playful and interested in everything going on around them; however, this also means they are easily susceptible to becoming lonesome or bored. Their voice is similar in tone to the Burmese, persistent but softer and sweeter than the Siamese, similar to the gentle quacking of a duck. Like Burmese, Tonkinese are reputed to sometimes engage in such dog-like behaviors as fetching, and to enjoy jumping to great heights."
+  },
+  {
+    "breed": "Toyger",
+    "country": "United States",
+    "origin": "Crossbreed",
+    "coat": "Short",
+    "pattern": "Mackerel",
+    "image": "../img/toyger.png",
+    "fun_fact": "The toyger is a breed of domestic cat, the result of breeding domestic shorthaired tabbies (beginning in the 1980s) to make them resemble a 'toy tiger', as its striped coat is reminiscent of the tiger's. The breed's creator, Judy Sugden, has stated that the breed was developed in order to inspire people to care about the conservation of tigers in the wild."
+  },
+  {
+    "breed": "Turkish Angora",
+    "country": "Turkey",
+    "origin": "Natural",
+    "coat": "Semi-long",
+    "pattern": "All but colorpoint",
+    "image": "../img/turkishangora.png",
+    "fun_fact": "In the early 20th century, Ankara Zoo, began a breeding program to protect and preserve pure white Angora cats. The zoo particularly prized odd-eyed specimens (i.e., with one blue and one amber eye); however the cats were chosen only by their color (white)—no other criterion was used."
+  },
+  {
+    "breed": "Turkish Van",
+    "country": "Turkey",
+    "origin": "Natural",
+    "coat": "Semi-long",
+    "pattern": "Van",
+    "image": "../img/turkishvan.png",
+    "fun_fact": "The Turkish Van is a semi-long-haired breed of domestic cat, which was developed in the United Kingdom from a selection of cats obtained from various cities of modern Turkey, especially Southeast Turkey. The breed is rare, and is distinguished by the Van pattern (named for the breed), where the colour is restricted to the head and the tail, and the rest of the cat is white."
+  },
+  {
+    "breed": "Ukrainian Levkoy",
+    "country": "Ukraine",
+    "origin": "Unknown",
+    "coat": "Hairless",
+    "pattern": "Varied",
+    "image": "../img/ukrainelevoy.png",
+    "fun_fact": "The Ukrainian Levkoy is a cat breed of distinct appearance, having inward-folding ears and little to no hair. These cats are of medium size with a longish body, appearing both muscular and slender. They have soft, elastic skin; an excess of which leads to a wrinkled appearance. The breed is not recognized by any major, international cat fancier and breeder organizations, only Ukrainian and Russian clubs. The Levkoy's peculiar features are: special angular contour of its head and 'stepped' profile (dog-face appearance), folded ears and large, but not wide almond-shaped eyes."
+  },
+  {
+    "breed": "York Chocolate",
+    "country": "United States",
+    "origin": "Natural",
+    "coat": "Long",
+    "pattern": "Solid",
+    "image": "../img/york.png",
+    "fun_fact": "The York Chocolate (or simply York) is an uncommon and relatively recent American breed of show cat, with a long, fluffy coat and a tapered tail and most of them are mostly or entirely chocolate-brown. The breed was named after New York state, where it was established in 1983."
+  }
+]
