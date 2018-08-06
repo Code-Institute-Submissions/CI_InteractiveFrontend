@@ -25,9 +25,9 @@
 </head>
 
 <body>
-    <header id="top-title" class="wh-100 bg-warning jumbotron">
+    <header id="top-title" class="wh-100 bg-warning jumbotron visible-small">
         <div class="row d-flex justify-content-around bg-cats2">
-            <div class="col text-center">
+            <div class="col text-right">
                 <h1 id="top_quote" class="pb-2">
                     Let's learn more about cats!</h1>
             </div>
@@ -45,7 +45,7 @@
 
     </header>
 
-    <nav class="navbar sticky-top navbar-expand-lg bg-light navbar-light mb-3 py-2">
+    <nav class="navbar sticky-top navbar-expand-md bg-light navbar-light mb-3 py-2 visible-small">
         <div class="container-fluid d-flex justify-content-between">
 
             <div>
@@ -70,7 +70,10 @@
 
         </div>
     </nav>
-    <main class="container align-center">
+    <div class="viewing-size">
+        This website is best viewed on big screens - please come back again to learn more about cats!
+    </div>
+    <main class="container align-center visible-small">
         <div class="row py-5">
             <div class="col mb-3 text-center">
                 <div class="alert bg-warning" id="cat_quotes">
@@ -83,7 +86,7 @@
                 <h4 class="mb-4">Type of fur</h4>
                 <div id="barchart" class="py-4"></div>
             </div>
-            <div class="col-md-6 py-4 bg-cats1 ">
+            <div class="col-md-6 py-4 bg-cats1 fixed-size ">
                 <div class="over-img">
                     <h2>
                         Please click on the charts below to discover more about each breed of cats!
@@ -96,18 +99,22 @@
         </div>
         <div class="row">
             <div class="col-md-4 py-5">
-                <h4 class="mb-4">Fur pattern</h4>
+                <h4 class="mb-4 title-chart">Fur pattern</h4>
                 <div id="piechart1">
 
                 </div>
             </div>
             <div class="col-md-4 py-5">
-                <h4 class="mb-4">Region of origin</h4>
-                <div id="piechart2"></div>
+                <h4 class="mb-4 title-chart">Region of origin</h4>
+                <div id="piechart2">
+
+                </div>
             </div>
             <div class="col-md-4 py-5">
-                <h4 class="mb-4">Breed evolution</h4>
-                <div id="piechart3"></div>
+                <h4 class="mb-4 title-chart">Breed evolution</h4>
+                <div id="piechart3">
+
+                </div>
             </div>
         </div>
         <div class="row">
@@ -139,7 +146,7 @@
     <footer class="container-fluid mt-4 ">
         <div class="row align-items-center justify-content-center bg-light">
 
-            <div class="col-4 px-4 mt-4">
+            <div class="col-4 px-4 mt-4 visible-small">
                 <p>
                     <button type="button" class="btn btn-warning btn-sm" id="disclaimer">Disclaimer</button>
 
@@ -148,7 +155,7 @@
             <div class="col-4 px-4 mt-4">
 
                 <!-- The Modal -->
-                <div id="disclaimerModal" class="modal">
+                <div id="disclaimerModal" class="modal ">
 
                     <!-- Modal content -->
                     <div class="modal-content">
@@ -167,7 +174,7 @@
                                 <p>"VS - CI_InteractiveFrontend" refers to the website and the contents hosted at
                                     <strong>https://nuagesdencre.github.io/CI_InteractiveFrontend/</strong>.</p>
                                 <p>All the information on this website - https://nuagesdencre.github.io/CI_InteractiveFrontend/
-                                    - is published in good faith and for general information purpose only. VS - CI_InteractiveFrontend
+                                    - is published in good faith and as an educational project only. VS - CI_InteractiveFrontend
                                     does not make any warranties about the completeness, reliability and accuracy of this
                                     information. Any action you take upon the information you find on this website (VS -
                                     CI_InteractiveFrontend), is strictly at your own risk. VS - CI_InteractiveFrontend will
@@ -239,7 +246,7 @@
 
             <div class="col-4 px-4 mt-4">
                 <p>
-                    <button type="button" class="btn btn-sm btn-outline-info ">
+                    <button type="button" class="btn btn-sm btn-outline-info">
                         <a href="https://github.com/nuagesdencre/CI_InteractiveFrontend">Return to Project Page</a>
                     </button>
                 </p>

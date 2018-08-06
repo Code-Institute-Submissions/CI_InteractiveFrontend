@@ -56,6 +56,8 @@ var datacount = dc.dataCount("#count_field");
    
     End Charts Name
   */
+  /* Dimensions*/
+  
   
   /*
    
