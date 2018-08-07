@@ -13,6 +13,9 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <title>VS - Code Institute Interactive Front-End Project</title>
+    <!-- FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
     <!-- jQuery UI CSS -->
@@ -25,7 +28,7 @@
 </head>
 
 <body class="bg-light">
-    <header id="top-title" class="wh-100 bg-warning jumbotron visible-small">
+    <header id="top-title" class="wh-100 bg-warning jumbotron visible-small"><a name="top"></a>
         <div class="row d-flex justify-content-around bg-cats2">
             <div class="col text-right">
                 <h1 id="top_quote" class="pb-2">
@@ -40,10 +43,8 @@
                 <h5>Discover cat breeds and fun snippets</h5>
             </div>
         </div>
-
-
-
     </header>
+
 
     <nav class="navbar sticky-top navbar-expand-md bg-light navbar-light mb-3 py-2 visible-small">
         <div class="container-fluid d-flex justify-content-between">
@@ -78,6 +79,14 @@
             </button>
         </p>
     </div>
+    <div class="p_sticky blue">
+        <a href="#top">
+            <i class="fas fa-arrow-circle-up"></i>
+        </a>
+        <a href="#bottom">
+            <i class="fas fa-arrow-circle-down"></i>
+        </a>
+    </div>
     <main class="container align-center visible-small ">
         <div class="row py-5">
             <div class="col mb-3 text-center">
@@ -87,7 +96,7 @@
             </div>
         </div>
         <div class="row">
-
+            <a name="top"></a>
             <div class="col-md-8 py-4">
                 <h4 class="mb-4">Type of fur</h4>
                 <div id="barchart" class="py-4 svg-container"></div>
@@ -103,7 +112,7 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div >
+            <div>
                 <img id="cat" src="img/bg/bg1.svg">
             </div>
         </div>
@@ -123,7 +132,7 @@
                 </div>
                 <div class="col-md-4 py-5">
                     <h4 class="mb-4 title-chart">Breed evolution</h4>
-                    <div id="piechart3"  class="svg-container ">
+                    <div id="piechart3" class="svg-container ">
 
                     </div>
                 </div>
@@ -148,6 +157,7 @@
 
             </div>
         </div>
+
         <div class="row">
 
             <table id="datatable">
@@ -255,7 +265,7 @@
                 </div>
 
             </div>
-
+            <a name="bottom"></a>
             <div class="col-4 px-4 mt-4 ">
                 <p>
                     <button type="button" class="btn btn-sm btn-outline-light">
