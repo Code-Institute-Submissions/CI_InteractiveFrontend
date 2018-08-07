@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="bg-light">
     <header id="top-title" class="wh-100 bg-warning jumbotron visible-small">
         <div class="row d-flex justify-content-around bg-cats2">
             <div class="col text-right">
@@ -50,7 +50,7 @@
 
             <div>
                 <p class="nav-item bg-light">Search by Cat Breed
-                    <div class="mx-3" id="search"></div>
+                    <div class="mx-4 my-2" id="search"></div>
                 </p>
             </div>
             <div>
@@ -70,10 +70,15 @@
 
         </div>
     </nav>
-    <div class="viewing-size">
-        This website is best viewed on big screens - please come back again to learn more about cats!
+    <div class="viewing-size my-4 px-5 text-center">
+        <img src="img/bg/bg1.svg" style="border: none"> This website is best viewed on big screens - please come back again to learn more about cats!
+        <p class="pt-2">
+            <button type="button" class="btn btn-sm btn-outline-info">
+                <a href="https://github.com/nuagesdencre/CI_InteractiveFrontend">Return to Project Page</a>
+            </button>
+        </p>
     </div>
-    <main class="container align-center visible-small">
+    <main class="container align-center visible-small ">
         <div class="row py-5">
             <div class="col mb-3 text-center">
                 <div class="alert bg-warning" id="cat_quotes">
@@ -82,12 +87,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 py-4">
+
+            <div class="col-md-8 py-4">
                 <h4 class="mb-4">Type of fur</h4>
-                <div id="barchart" class="py-4"></div>
+                <div id="barchart" class="py-4 svg-container"></div>
             </div>
-            <div class="col-md-6 py-4 bg-cats1 fixed-size ">
-                <div class="over-img">
+            <div class="col-md-4 py-4">
+                <div class="over-img p-3">
                     <h2>
                         Please click on the charts below to discover more about each breed of cats!
                     </h2>
@@ -95,25 +101,31 @@
                         all of your options.</p>
                 </div>
             </div>
-
         </div>
-        <div class="row">
-            <div class="col-md-4 py-5">
-                <h4 class="mb-4 title-chart">Fur pattern</h4>
-                <div id="piechart1">
-
-                </div>
+        <div class="row justify-content-center">
+            <div >
+                <img id="cat" src="img/bg/bg1.svg">
             </div>
-            <div class="col-md-4 py-5">
-                <h4 class="mb-4 title-chart">Region of origin</h4>
-                <div id="piechart2">
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-4 py-5">
+                    <h4 class="mb-4 title-chart">Fur pattern</h4>
+                    <div id="piechart1" class="svg-container ">
 
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4 py-5">
-                <h4 class="mb-4 title-chart">Breed evolution</h4>
-                <div id="piechart3">
+                <div class="col-md-4 py-5">
+                    <h4 class="mb-4 title-chart">Region of origin</h4>
+                    <div id="piechart2" class="svg-container ">
 
+                    </div>
+                </div>
+                <div class="col-md-4 py-5">
+                    <h4 class="mb-4 title-chart">Breed evolution</h4>
+                    <div id="piechart3"  class="svg-container ">
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -143,16 +155,16 @@
             </table>
         </div>
     </main>
-    <footer class="container-fluid mt-4 ">
-        <div class="row align-items-center justify-content-center bg-light">
+    <footer class="container-fluid mt-4 visible-small">
+        <div class="row align-items-center justify-content-center bg-info">
 
-            <div class="col-4 px-4 mt-4 visible-small">
+            <div class="col-8 px-4 mt-4 ">
                 <p>
                     <button type="button" class="btn btn-warning btn-sm" id="disclaimer">Disclaimer</button>
 
                 </p>
             </div>
-            <div class="col-4 px-4 mt-4">
+            <div>
 
                 <!-- The Modal -->
                 <div id="disclaimerModal" class="modal ">
@@ -244,9 +256,9 @@
 
             </div>
 
-            <div class="col-4 px-4 mt-4">
+            <div class="col-4 px-4 mt-4 ">
                 <p>
-                    <button type="button" class="btn btn-sm btn-outline-info">
+                    <button type="button" class="btn btn-sm btn-outline-light">
                         <a href="https://github.com/nuagesdencre/CI_InteractiveFrontend">Return to Project Page</a>
                     </button>
                 </p>

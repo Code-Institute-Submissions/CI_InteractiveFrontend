@@ -1,4 +1,9 @@
-/*Typography*/
+/*
+
+Typography
+
+*/
+
 @import url("https://fonts.googleapis.com/css?family=Concert+One|Open+Sans:300,400");
 * {
   font-family: "Open Sans";
@@ -19,29 +24,35 @@ th {
 }
 
 h4 {
-  float: left;
+  display: flex;
+  align-items: center;
 }
 
-#top-title {
-  margin: 0;
-  border-radius: 0;
-  color: #fff;
-}
-#top_quote {
-  transform: skew(-20deg);
-  letter-spacing: 0.2em;
-  font-size: 5.5em;
-  text-shadow: 1px 1px 1px #17a2b8;
-}
-#project_id {
-  color: rgb(23, 162, 184);
+h4::before,
+h4::after {
+  content: "";
+  background: #ffc107;
+  height: 0.1em;
+  margin: 0.2em;
+  flex: 1;
 }
 
-/*Body*/
+/*
 
-.bg-cats1 {
-  background: url("../img/bg/bg1.svg") no-repeat;
+Header & Body Styling
+
+*/
+
+.navbar {
+  box-shadow: 0 3px 1px -2px rgb(114, 194, 218, 0.2),
+    0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
+
+#cat {
+  height: 20vh;
+  border: none;
+}
+
 .bg-cats2 {
   background: url("../img/bg/bg3.svg") no-repeat;
 }
@@ -52,34 +63,7 @@ h4 {
     rgba(255, 255, 255, 0.87)
   );
   text-shadow: 2px 2px 8px #fff;
-}
-
-.fixed-size {
-  min-height: 450px;
-}
-
-.dc-select-menu {
-  border-color: transparent;
-  background-color: transparent;
-  cursor: default;
-  border: none;
-}
-
-.dc-chart .pie-slice {
-  font-size: 0.8em;
-}
-
-#rotating-item-wrapper {
-  position: relative;
-  max-width: 900px;
-}
-
-.rotating-item {
-  display: none;
-  box-sizing: inherit;
-  position: absolute;
-  top: 0;
-  left: 0;
+  border-radius:13%;
 }
 
 img {
@@ -88,188 +72,301 @@ img {
   border: 1px solid #ccc;
 }
 
-.navbar{
-  box-shadow: 0 3px 1px -2px rgb(114, 194, 218,0.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-}
-
-/*Quotes*/
-
-
-#cat_quotes {
-  padding: 20px;
-  transform: skew(10deg);
-  letter-spacing: 0.1em;
-}
-
-/*Table*/
-
-.dc-table-head {
-  margin-top: 2px;
-  font-size: 1.3em;
-  font-weight: 400;
-}
-table {
-  border-collapse: collapse;
-  margin: 10px;
-}
-
-table thead tr,
-table tbody tr {
-  line-height: 2;
-  text-align: center;
-  background-color: #fff;
-}
-
-table thead tr {
-  background-color: rgb(114, 194, 218);
-  line-height: 2;
-  color: white;
-  text-transform: uppercase;
-}
-
-td {
-  padding: 20px;
-  margin: 10px;
-  display: table-cell;
-}
-
-td.dc-table-column._0 {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-table tbody tr:hover {
-  background-color: #cfedfd;
-  cursor: context-menu;
-}
-/* barchart */
-
-#barchart > svg > g > g.axis.x text {
-  transform: rotate(20deg) translateY(10px) translateX(10px);
-}
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 9998;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: initial;
-  -webkit-animation-name: fadeModal;
-  -webkit-animation-duration: 0.4s;
-  animation-name: fadeModal;
-  animation-duration: 0.4s;
-}
-
-/* Modal Content */
-.modal-content {
-  position: fixed;
-  bottom: 0;
-  background-color: #fff;
-  font-size: 0.9em;
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
-  -webkit-animation-name: slideModal;
-  -webkit-animation-duration: 0.4s;
-  animation-name: slideModal;
-  animation-duration: 0.4s;
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-  z-index: 9999;
-}
-.modal-header,
-.modal-footer {
-  color: white;
-}
-
-/* Add Animation */
-@-webkit-keyframes slideModal {
-  from {
-    bottom: -300px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
-}
-
-@keyframes slideModal {
-  from {
-    bottom: -300px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeModal {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeModal {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 /* 
 
 Media Queries 
 
 */
 
-@media (min-width: 200px) { 
-  .viewing-size{
-    display:block;
+@media (max-width: 575px) {
+  .viewing-size {
+    display: block;
+    align-content: space-around;
     font-family: "Concert One";
+    height: 80vh;
   }
-  .visible-small{
+  .visible-small {
     display: none;
   }
- }
+}
 
-@media (min-width: 400px) {
-  .viewing-size{
-    display:none;
+@media (min-width: 576px) {
+  .dc-select-menu {
+    border-color: transparent;
+    background-color: transparent;
+    cursor: default;
+    border: none;
   }
-  .visible-small{
+
+  .dc-chart .pie-slice {
+    font-size: 0.8em;
+  }
+
+  #rotating-item-wrapper {
+    position: relative;
+    max-width: 900px;
+  }
+
+  .rotating-item {
+    display: none;
+    box-sizing: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .viewing-size {
+    display: none;
+  }
+  .visible-small {
     display: block;
   }
   .text-right {
     padding: 10px 60px 10px 80px;
   }
- 
-} 
 
-@media (min-width: 992px)  {
+  /*
+  
+  Barchart 
+
+  */
+
+  #barchart > svg > g > g.axis.x text {
+    transform: rotate(20deg) translateY(10px) translateX(10px);
+  }
+
+  /* 
+
+  Modal (background) 
+
+  */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9998;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: initial;
+    -webkit-animation-name: fadeModal;
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeModal;
+    animation-duration: 0.4s;
+  }
+
+  /* 
+
+  Modal Content 
+
+  */
+  .modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    font-size: 0.9em;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-animation-name: slideModal;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideModal;
+    animation-duration: 0.4s;
+  }
+
+  /* 
+
+  The Close Button 
+
+  */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  .modal-header,
+  .modal-footer {
+    color: white;
+  }
+
+  /* 
+
+  Animation 
+
+  */
+  @-webkit-keyframes slideModal {
+    from {
+      bottom: -300px;
+      opacity: 0;
+    }
+    to {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideModal {
+    from {
+      bottom: -300px;
+      opacity: 0;
+    }
+    to {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeModal {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeModal {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /*
+
+  Table
+
+  */
+
+  .dc-table-head {
+    margin-top: 2px;
+    font-size: 1.3em;
+    font-weight: 400;
+  }
+  table {
+    border-collapse: collapse;
+    margin: 10px;
+  }
+
+  table thead tr,
+  table tbody tr {
+    line-height: 2;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 3px 1px -2px rgb(114, 194, 218, 0.2),
+      0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  table thead tr {
+    background-color: rgb(114, 194, 218);
+    line-height: 2;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  td {
+    padding: 0;
+    margin: 10px;
+    display: table-cell;
+  }
+
+  td.dc-table-column._0 {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  table tbody tr:hover {
+    background-color: #cfedfd;
+    cursor: context-menu;
+  }
+
+  #datatable > thead > tr > th:nth-child(4),
+  .dc-table-column {
+    display: inline-block;
+  }
+  #datatable > thead > tr > th:nth-child(3),
+  #datatable > thead > tr > th:nth-child(2),
+  #datatable > thead > tr > th:nth-child(1),
+  #datatable > thead > tr > th:nth-child(5) {
+    display: none;
+  }
+
+  /*
+
+  Piechart
+
+  */
+  svg {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .svg-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  /*
+
+  Quotes
+
+  */
+
+  #cat_quotes {
+    padding: 20px;
+    transform: skew(10deg);
+    letter-spacing: 0.1em;
+  }
+
+  #top-title {
+    margin: 0;
+    border-radius: 0;
+    color: #fff;
+  }
+  #top_quote {
+    transform: skew(-20deg);
+    letter-spacing: 0.2em;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px #17a2b8;
+  }
+  #project_id {
+    color: rgb(23, 162, 184);
+  }
+}
+
+@media (min-width: 992px) {
   .text-right {
     padding: 15px 50px 15px 15px;
+  }
+  #top_quote {
+    font-size: 5.5em;
+  }
+
+  #datatable > thead > tr > th:nth-child(4),
+  .dc-table-column,
+  #datatable > thead > tr > th:nth-child(3),
+  #datatable > thead > tr > th:nth-child(2),
+  #datatable > thead > tr > th:nth-child(1),
+  #datatable > thead > tr > th:nth-child(5) {
+    display: table-cell;
+  }
+
+  td {
+    padding: 20px;
   }
 }
