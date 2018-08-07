@@ -2,8 +2,10 @@
 <html>
 
 <head>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon support -->
     <meta name="description" content="VS - CI Project">
     <link rel="shortcut icon" href="fav/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
@@ -13,6 +15,7 @@
     <link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <!-- Title -->
     <title>VS - Code Institute Interactive Front-End Project</title>
     <!-- FontAwesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
@@ -29,6 +32,7 @@
 </head>
 
 <body class="bg-light">
+    <!-- Header -->
     <header id="top-title" class="wh-100 bg-warning jumbotron visible-small"><a name="top"></a>
         <div class="row d-flex justify-content-around bg-cats2">
             <div class="col text-right">
@@ -45,9 +49,9 @@
             </div>
         </div>
     </header>
-
-
-    <nav class="navbar sticky-top navbar-expand-md bg-light navbar-light mb-3 py-2 visible-small">
+<!-- Header End -->
+<!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md bg-light navbar-light mb-3 py-2 visible-small">
         <div class="container-fluid d-flex justify-content-between">
 
             <div>
@@ -72,6 +76,9 @@
 
         </div>
     </nav>
+<!-- Navigation Bar End -->
+
+<!-- Error message (small screens) -->
     <div class="viewing-size my-4 px-5 text-center">
         <img src="img/bg/bg1.svg" style="border: none"> This website is best viewed on big screens - please come back again to learn more about cats!
         <p class="pt-2">
@@ -80,7 +87,11 @@
             </button>
         </p>
     </div>
+<!-- Error Message End -->
+
+<!-- Side Navigation Bar -->
     <div class="p_sticky blue visible-small">
+            <a href="#cat" onclick="javascript:dc.filterAll(); dc.renderAll();" alt="Reset filters"><i class="fas fa-sync"></i></a>
         <a href="#top">
             <i class="fas fa-arrow-circle-up"></i>
         </a>
@@ -88,8 +99,11 @@
             <i class="fas fa-arrow-circle-down"></i>
         </a>
     </div>
+<!-- Side Navigation Bar End-->
+<!-- Content -->
     <main class="container align-center visible-small ">
         <div class="row py-5">
+            <!-- Snippets about cats, alternating every 9 seconds -->
             <div class="col mb-3 text-center">
                 <div class="alert bg-warning" id="cat_quotes">
                     <h2>Keep an eye here for fun facts!</h2>
@@ -98,40 +112,45 @@
         </div>
         <div class="row">
             <a name="top"></a>
-            <div class="col-md-8 py-4">
+            <div class="col-lg-8 py-4">
+                <!-- Bar chart relevant to the breed's typical fur length -->
                 <h4 class="mb-4">Type of fur</h4>
                 <div id="barchart" class="py-4 svg-container"></div>
             </div>
-            <div class="col-md-4 py-4">
+            <div class="col-lg-4 py-4">
+                <!-- Introduction to the webpage's interactive aspects -->
                 <div class="over-img p-3">
                     <h2>
-                        Please click on the charts below to discover more about each breed of cats!
+                        Please click on the chart above and piecharts below to discover a bit more about each breed of cats!
                     </h2>
-                    <p>Each click adds or remove a filter to adjust your selection. Click the "Reset All" button to retrieve
+                    <p>Each click adds or remove a filter to adjust your selection. Click the "Reset All" button or the side button <i class="fas fa-sync"></i> to retrieve
                         all of your options.</p>
                 </div>
             </div>
         </div>
         <div class="row justify-content-center">
             <div>
-                <img id="cat" src="img/bg/bg1.svg">
+                <img id="cat" src="img/bg/bg1.svg"><a name="cat"></a>
             </div>
         </div>
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col-md-4 py-5">
+                <!-- Pie chart relevant to the breed's typical or distinctive fur pattern -->
+                <div class="col-lg-4 py-5">
                     <h4 class="mb-4 title-chart">Fur pattern</h4>
                     <div id="piechart1" class="svg-container ">
 
                     </div>
                 </div>
-                <div class="col-md-4 py-5">
+                <!-- Pie chart relevant to the breed's region of origin -->
+                <div class="col-lg-4 py-5">
                     <h4 class="mb-4 title-chart">Region of origin</h4>
                     <div id="piechart2" class="svg-container ">
 
                     </div>
                 </div>
-                <div class="col-md-4 py-5">
+                <!-- Pie chart relevant to the breed's evolution -->
+                <div class="col-lg-4 py-5">
                     <h4 class="mb-4 title-chart">Breed evolution</h4>
                     <div id="piechart3" class="svg-container ">
 
@@ -140,6 +159,7 @@
             </div>
         </div>
         <div class="row">
+            <!-- Filtered elements count -->
             <div class="col">
                 <div id='count_field' class="ml-3">
                     <span class='filter-count'></span>
@@ -148,6 +168,7 @@
                 </div>
             </div>
             <div class="col">
+                <!-- Pagination -->
                 <p class="ml-3">
                     <span>Datatable displaying records </span>
                     <span id="begin"></span> -
@@ -166,6 +187,9 @@
             </table>
         </div>
     </main>
+
+<!-- Content End -->
+<!-- Footer -->
     <footer class="container-fluid mt-4 visible-small">
         <div class="row align-items-center justify-content-center bg-info">
 
@@ -279,7 +303,7 @@
             </div>
         </div>
     </footer>
-
+<!-- Footer End -->
 
     <!-- External JS libraries -->
     <script src="js/vendor/jquery.min.js"></script>

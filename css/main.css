@@ -40,9 +40,10 @@ h4::after {
 .blue a
  {
   color: rgb(23, 162, 184);
-  font-size: 3em;
+  font-size: 2.3em;
   z-index:33;
   display:block;
+  margin-right:5px;
 }
 /*
 
@@ -367,7 +368,7 @@ Media Queries
 
   .p_sticky {
     position: sticky;
-    top: 85vh;
+    top: 81vh;
     float: right;
   }
 }
