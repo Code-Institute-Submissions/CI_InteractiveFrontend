@@ -76,7 +76,7 @@ var datacount = dc.dataCount("#count_field");
       .height(300)
       .dimension(dim)
       .group(group).on("filtered", chartCallback)
-      .margins({ top: 10, right: 40, bottom: 100, left: 20 })
+      .margins({ top: 30, right: 40, bottom: 100, left: 20 })
       .xUnits(dc.units.ordinal)
       .x(
         d3.scaleBand().domain(
@@ -270,7 +270,7 @@ var datacount = dc.dataCount("#count_field");
 
 function search_bar(ndx) {
     var dim = ndx.dimension(function(d) {
-      return d["breed"];
+      return d["country"];
     });
   
     search.dimension(dim);
