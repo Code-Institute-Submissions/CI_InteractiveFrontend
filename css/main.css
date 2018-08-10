@@ -369,12 +369,13 @@ Media Queries
     color: rgb(23, 162, 184);
   }
 
-  .p_sticky, .p-sticky >* {
-    position: sticky;
+  .p_sticky, .p-sticky > * {
+    position: fixed;
+
     top: 81vh;
-    float: right;
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
+    background:transparent;
   }
 }
 
