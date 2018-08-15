@@ -195,6 +195,7 @@ Media Queries
   }
   .modal-content a:hover {
     background-color: #ffc107;
+    color:white;
   }
 
   /* 
