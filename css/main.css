@@ -371,7 +371,7 @@ Media Queries
 
   .p_sticky, .p-sticky > * {
     position: fixed;
-    top: 80vh;
+    top: 70vh;
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
     background:transparent;
