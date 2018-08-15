@@ -37,13 +37,12 @@ h4::after {
   flex: 1;
 }
 .blue a:hover,
-.blue a
- {
+.blue a {
   color: rgb(23, 162, 184);
   font-size: 2.3em;
-  z-index:33;
-  display:block;
-  margin-right:5px;
+  z-index: 33;
+  display: block;
+  margin-right: 5px;
 }
 /*
 
@@ -191,6 +190,12 @@ Media Queries
     animation-name: slideModal;
     animation-duration: 0.4s;
   }
+  .modal-content a {
+    color: rgb(23, 162, 184);
+  }
+  .modal-content a:hover {
+    background-color: #ffc107;
+  }
 
   /* 
 
@@ -278,7 +283,8 @@ Media Queries
   }
 
   table thead tr,
-  table tbody tr,table  {
+  table tbody tr,
+  table {
     line-height: 2;
     text-align: center;
     background-color: #fff;
@@ -331,8 +337,6 @@ Media Queries
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-   
-      
   }
   .svg-container {
     margin-left: auto;
@@ -369,13 +373,14 @@ Media Queries
     color: rgb(23, 162, 184);
   }
 
-  .p_sticky, .p-sticky > * {
+  .p_sticky,
+  .p-sticky > * {
     position: fixed;
     top: 80vh;
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
-    background:transparent;
-    margin-left:10px;
+    background: transparent;
+    margin-left: 10px;
   }
 }
 
