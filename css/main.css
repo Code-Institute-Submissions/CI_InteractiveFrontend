@@ -152,6 +152,9 @@ Media Queries
     transform: rotate(20deg) translateY(10px) translateX(10px);
   }
 
+  #barchart > svg > g > text {
+    transform: rotate(-90deg) translateY(20px) translateX(-113px);
+  }
   /* 
 
   Modal (background) 
@@ -195,7 +198,7 @@ Media Queries
   }
   .modal-content a:hover {
     background-color: #ffc107;
-    color:white;
+    color: white;
   }
 
   /* 
@@ -320,6 +323,7 @@ Media Queries
   .dc-table-column {
     display: inline-block;
   }
+
   #datatable > thead > tr > th:nth-child(3),
   #datatable > thead > tr > th:nth-child(2),
   #datatable > thead > tr > th:nth-child(1),
@@ -382,6 +386,13 @@ Media Queries
     -webkit-transform: translateZ(0);
     background: transparent;
     margin-left: 10px;
+    z-index: 8888;
+  }
+
+  #resetBtn {
+    width: 90px;
+    height: 90px;
+    white-space: normal;
   }
 }
 
