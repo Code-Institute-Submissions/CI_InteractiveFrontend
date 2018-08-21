@@ -1,5 +1,6 @@
 # Data Dashboard Creation - Let's learn about cats!
-## Code Institute - Interactive Frontend Project
+ **Code Institute - Interactive Frontend Project**
+
  Project live here: https://nuagesdencre.github.io/CI_InteractiveFrontend/
 ***********
 
@@ -22,7 +23,7 @@ In this case, I decided to pick a whimsical subject and present it as simply, pl
 - Drawings and pictures
 
 ## Functionality of the project 
-I incorporated links and buttons to allow your user to navigate the site, along with an easier control of the site functionality.
+I incorporated links and buttons to allow my user to navigate the site, along with an easier control of the site functionality.
 
 I endeavoured to make the site is as responsive as possible, however I realised that the best user experience with charts necessitated a bigger screen than most smartphones. Charts using D3.js are not responsive as they are designed for desktop or large-screen viewing. I tested this by checking the site on different screen sizes and browsers. 
 
@@ -79,15 +80,17 @@ The project live here: https://nuagesdencre.github.io/CI_InteractiveFrontend/
 ## Testing
 
 ```
-Jasmine: useful when input is given, DOM generated  & retruns a value -- this project does not give me the opportunity to use it
+Jasmine: Jasmine testing is useful when input is given by the visitor, and when the DOM generates  & returns a value.
+This parcticular project did not give me the opportunity to use it.
+However I have inspected the javascript and jQuery code using jsLint and jsHint (http://jshint.com/).
 
-Screen size
+Screen size:
 - Tested on various devices and screen sizes
 - Message displayed when screen size deemed too small for a proper view of the dashboard. This message invites the viewer to return to the page using a larger size screen.
 - Requested inputs from friends and family members using a variety of devices to ensure an equal viewing experience.
 
 ```
-I conducted and documented tests to ensure that all of my website's functionality work well.
+To the best of my abilitities, I conducted and documented tests to ensure that all of my website's functionality work well.
 
 ## Deployment 
 
@@ -117,4 +120,7 @@ This information has also been included (in fewer words) in the disclaimer porti
                                     
 
 ## Contact
-vero@nuagesdencre.com
+
+Feel free to get in touch for feedback.
+
+**vero@nuagesdencre.com**
