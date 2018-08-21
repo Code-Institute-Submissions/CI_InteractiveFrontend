@@ -14,13 +14,23 @@ In this case, I decided to pick a whimsical subject and present it as simply, pl
 ### *Let's learn about cats!*
 
 ## Features
+- Charts created using d3.js, dc.js and crossfilter
+- Interactive filtering of data reflected in a datatable
+   > The datatable clearly displays the information available and offers an external link to the associated wikipedia page for more details 
+- Revolving quotes and information snippets at the top of the page
+- Disclaimer page
+- Drawings and pictures
 
 ## Functionality of the project 
-[x] Incorporate links or buttons to allow your user to navigate the site and reset/control the site functionality.
+I incorporated links and buttons to allow your user to navigate the site, along with an easier control of the site functionality.
 
-[x] Use semantic HTML5 elements to structure your HTML code better.
+I endeavoured to make the site is as responsive as possible, however I realised that the best user experience with charts necessitated a bigger screen than most smartphones. Charts using D3.js are not responsive as they are designed for desktop or large-screen viewing. I tested this by checking the site on different screen sizes and browsers. 
 
-[x] Make sure your site is as responsive as possible. You can test this by checking the site on different screen sizes and browsers. Please note that if you are building a data dashboard, only your chart containers are expected to be responsive. Charts using D3.js are not responsive as they are designed for desktop or large-screen viewing.
+My chart containers are responsive however and will be displayed differently at the medium and large breaking points. Charts using D3.js are not responsive as they are designed for desktop or large-screen viewing.
+
+I included a message to invite visitors back to the site using a bigger viewport.
+
+
 ## Process
  I wrote down user stories and created a wireframe before embarking on full-blown development.
 ### *Meet our Users*
@@ -46,7 +56,7 @@ In this case, I decided to pick a whimsical subject and present it as simply, pl
 - [Bootstrap v.4.1](https://getbootstrap.com/)  
    > Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.                         
 - [Modal template](https://www.w3schools.com/howto/howto_css_modals.asp)
-  > This modal template inspired me to include the disclaimer notice as it is currently shown on the website. I wished to disclose the source of the code accordingly, even if I have tailored the modal to the project.
+  > This modal template inspired me to include the disclaimer notice as it is currently shown on the website. I wished to disclose the source of the code accordingly, even if I have tailored the modal to the project. This modal format suited the project as it was unobtrusive and elegant - I styled it and modified the elements to match the webpage accordingly.
 - jQuery
   > jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML.
 - Data-specific Javascript libraries
@@ -66,8 +76,6 @@ The final version of my code is hosted on GitHub Pages.
 The project live here: https://nuagesdencre.github.io/CI_InteractiveFrontend/
 
 
-> Detail how the project was deployed and tested and if some of the work was based on other code, explain what was kept and how it was changed to fit your need.
-
 ## Testing
 
 ```
@@ -76,12 +84,15 @@ Jasmine: useful when input is given, DOM generated  & retruns a value -- this pr
 Screen size
 - Tested on various devices and screen sizes
 - Message displayed when screen size deemed too small for a proper view of the dashboard. This message invites the viewer to return to the page using a larger size screen.
+- Requested inputs from friends and family members using a variety of devices to ensure an equal viewing experience.
 
 ```
-[wip] You should conduct and document tests to ensure that all of your website's functionality works well.
+I conducted and documented tests to ensure that all of my website's functionality work well.
 
 ## Deployment 
 
+The project was deployed through the Github pages.
+The project is live here: https://nuagesdencre.github.io/CI_InteractiveFrontend/
 
 
 ## Hurdles
