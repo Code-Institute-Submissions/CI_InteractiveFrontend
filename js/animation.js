@@ -27,7 +27,7 @@ window.onclick = function(event) {
 
 
 // Cat Quotes
-var cat_quote = new Array();
+var cat_quote = [];
 cat_quote[0] = "Cats can hear sounds too faint or too high in frequency for human ears, such as those made by mice and other small animals. Cats can hear ultrasound, which is important in hunting because many species of rodents make ultrasonic calls.";
 cat_quote[1] = "A group of cats can be referred to as a clowder or a glaring.";
 cat_quote[2] = "A pedigreed cat is one whose ancestry is recorded by a cat fancier organization. A purebred (or pure-bred) cat is one whose ancestry contains only individuals of the same breed. Many pedigreed and especially purebred cats are exhibited as show cats. ";
