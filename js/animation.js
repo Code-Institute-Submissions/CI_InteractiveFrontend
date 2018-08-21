@@ -56,7 +56,3 @@ setInterval(function() {
     $("#cat_quotes").fadeIn("slow");
   });
 }, 9999);
-
-
-
-

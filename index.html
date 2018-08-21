@@ -67,7 +67,7 @@
 
             </div>
             <div>
-                <button type="button" class="btn btn-info mx-4">
+                <button type="button" class="btn btn-info" id="resetBtn">
                     <a onclick="javascript:dc.filterAll(); dc.renderAll();">Reset All Filters</a>
                 </button>
             </div>
@@ -81,7 +81,7 @@
 
     <!-- Error message (small screens) -->
     <div class="viewing-size my-4 px-5 text-center">
-        <img src="img/bg/bg1.svg" style="border: none"> This website is best viewed on big screens - please come back again to learn more about cats!
+        <img src="img/bg/bg1.svg" class="over-img" style="border: none"> This website is best viewed on big screens - please come back again to learn more about cats!
         <p class="pt-2">
             <button type="button" class="btn btn-sm btn-outline-info">
                 <a href="https://github.com/nuagesdencre/CI_InteractiveFrontend">Return to Project Page</a>
@@ -123,10 +123,11 @@
                 <div class="over-img p-3">
                     <h2>
                         <a name="top"></a>
-                        Please click on the chart and piecharts below to discover a bit more about each breed of cats!
+                        Please click on the charts below to discover a bit more about each breed of cats! There are 96 differents breeds you can
+                        discover in total.
                     </h2>
-                    <p>Each click adds or remove a filter to adjust your selection. Click the "Reset All" button or the side
-                        button
+                    <p>Each click on a chart adds or remove a filter to adjust your selection. Scroll down to review the cats
+                        listed in the datatable. When you are done, click the "Reset All" button or the side button
                         <i class="fas fa-sync"></i> to retrieve all of your options.</p>
                 </div>
             </div>
@@ -201,9 +202,15 @@
     <footer class="container-fluid mt-4 visible-small">
         <div class="row align-items-center justify-content-center bg-info">
 
-            <div class="col-8 px-4 mt-4 ">
+            <div class="col-4 px-4 mt-4 ">
                 <p>
                     <button type="button" class="btn btn-warning btn-sm" id="disclaimer">Disclaimer</button>
+
+                </p>
+            </div>
+            <div class="col-4 px-4 mt-4 text-center">
+                <p>
+                    <badge class="badge badge-light"> Send feedback to: vero@nuagesdencre.com</alert>
 
                 </p>
             </div>
@@ -267,7 +274,7 @@
 
                                     </li>
                                     <li>
-                                        <a href="https://en.wikipedia.org/wiki/List_of_cat_breeds" target="_blank">Data</a> used for this project
+                                        <a href="https://en.wikipedia.org/wiki/List_of_cat_breeds" target="_blank">Data source</a> used for this project
                                     </li>
                                     <li>
                                         Google fonts Open Sans & Concert One (
@@ -299,11 +306,12 @@
 
             </div>
             <a name="bottom"></a>
-            <div class="col-4 px-4 mt-4 ">
+            <div class="col-4 px-4 mt-4 text-right">
                 <p>
                     <button type="button" class="btn btn-sm btn-outline-light">
-                        <a href="https://github.com/nuagesdencre/CI_InteractiveFrontend">Return to Project Page</a>
+                        <a href="https://github.com/nuagesdencre/CI_InteractiveFrontend">Return to Github Project</a>
                     </button>
+
                 </p>
 
 
