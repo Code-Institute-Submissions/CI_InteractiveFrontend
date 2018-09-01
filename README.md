@@ -46,7 +46,7 @@ I included a message to invite visitors back to the site using a bigger viewport
 | Harry   | Harry rescued a kitten while reorganising his brother-in-law's garage. He has since adopted the kitty and he now wants to know which kind of cat it could be.                                     | As a visitor, Harry expects to see clear explanation of the data visualisations used, so he can understand the displayed information. Harry also expects that access to the resource is straightforward (no login, no popups).                                                                                                                                                                            | As he accesses the page, Harry has a quick overall look (no endless paragraphs to read, no login needed, no pop-ups, okay). Harry was told by his family it could probably be a 'tabby'. He looks up in the alphabetical drop-down menu but does not see tabby right away. He carefully selects the relevant criteria on the piewheel to see the results. There are a lot of choices, so he starts with the wheels where he can read most of them. He concludes his visit  convinced that the cat is, in the end, of no breed in particular. He calls his son over to look at weird-looking cats in the meantime. |
 
 ## The webpage's mockup
-* [Wireframe here!](datadashboard.png)
+* [Wireframe here!](./datadashboard.png)
 
 ## Technologies used 
  Since my single-page application makes use of Bootstrap (a CSS frameworks) and other libraries, I created a vendor file to ensure a clear separation between the library code and my own code.
