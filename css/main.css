@@ -37,12 +37,15 @@ h4::after {
   flex: 1;
 }
 .blue a:hover,
-.blue a {
+.blue a,
+.blue span {
   color: rgb(23, 162, 184);
+  text-shadow: 1px 1px 1px #fff, -1px -1px 1px #fff;
   font-size: 2.3em;
   z-index: 33;
-  display: block;
+  display: inline-block;
   margin-right: 5px;
+  cursor: pointer;
 }
 /*
 
@@ -50,9 +53,23 @@ Header & Body Styling
 
 */
 
-.navbar {
-  box-shadow: 0 3px 1px -2px rgb(114, 194, 218, 0.2),
-    0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+.nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9998;
+  left: 0;
+  top: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+.nav-menu {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
 #cat {
@@ -381,7 +398,7 @@ Media Queries
   .p_sticky,
   .p-sticky > * {
     position: fixed;
-    top: 70vh;
+    top: 2vh;
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
     background: transparent;
