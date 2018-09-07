@@ -15,6 +15,7 @@ In this case, I decided to pick a whimsical subject and present it as simply, pl
 ### *Let's learn about cats!*
 
 ## Features
+- Page by page presentation of content for a better user experience (using pagepiling.js)
 - Charts created using d3.js, dc.js and crossfilter
 - Interactive filtering of data reflected in a datatable
    > The datatable clearly displays the information available and offers an external link to the associated wikipedia page for more details 
@@ -46,7 +47,8 @@ I included a message to invite visitors back to the site using a bigger viewport
 | Harry   | Harry rescued a kitten while reorganising his brother-in-law's garage. He has since adopted the kitty and he now wants to know which kind of cat it could be.                                     | As a visitor, Harry expects to see clear explanation of the data visualisations used, so he can understand the displayed information. Harry also expects that access to the resource is straightforward (no login, no popups).                                                                                                                                                                            | As he accesses the page, Harry has a quick overall look (no endless paragraphs to read, no login needed, no pop-ups, okay). Harry was told by his family it could probably be a 'tabby'. He looks up in the alphabetical drop-down menu but does not see tabby right away. He carefully selects the relevant criteria on the piewheel to see the results. There are a lot of choices, so he starts with the wheels where he can read most of them. He concludes his visit  convinced that the cat is, in the end, of no breed in particular. He calls his son over to look at weird-looking cats in the meantime. |
 
 ## The webpage's mockup
-* [Wireframe here!](./dashboard.png)
+* v1. [Wireframe here!](./dashboard.png)
+* v2. Updated [wireframe](./dashboard_v2.png) for powerpoint-like presentation
 
 ## Technologies used 
  Since my single-page application makes use of Bootstrap (a CSS frameworks) and other libraries, I created a vendor file to ensure a clear separation between the library code and my own code.
@@ -58,6 +60,8 @@ I included a message to invite visitors back to the site using a bigger viewport
    > Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.                         
 - [Modal template](https://www.w3schools.com/howto/howto_css_modals.asp)
   > This modal template inspired me to include the disclaimer notice as it is currently shown on the website. I wished to disclose the source of the code accordingly, even if I have tailored the modal to the project. This modal format suited the project as it was unobtrusive and elegant - I styled it and modified the elements to match the webpage accordingly.
+- [Pagepiling](https://github.com/alvarotrigo/pagePiling.js)
+  > JQuery plugin to create beautiful scrollable websites
 - jQuery
   > jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML.
 - Data-specific Javascript libraries
@@ -92,6 +96,7 @@ Screen size:
 ```
 To the best of my abilitities, I conducted and documented tests to ensure that all of my website's functionality work well.
 
+
 ## Deployment 
 
 The project was deployed through the Github pages.
@@ -101,6 +106,7 @@ The project is live here: https://nuagesdencre.github.io/CI_InteractiveFrontend/
 ## Hurdles
 
 - GitHub organisation: I realised quite far in the project that the git commits require a new branch for every new feature or bug for a clearer understanding. 
+- Overall UX: After presenting my webpage to a few children, I quickly noticed 2 things: their attention span is limited, which means they can normally focus on one element (or image) at a time. This is why I decided to go ahead with a cleaner, powerpoint-like presentation instead of the initial scrolling-down amalgamation of the charts. I discovered the plugin 'pagepiling' while experimenting with different approaches that also allowed for navigation using the keyboard instead of the mouse or touchscreen.
   
 ## Credits and Content
 

@@ -27,299 +27,365 @@
     <link rel="stylesheet" href="css/vendor/dc.min.css">
     <link rel="stylesheet" href="css/vendor/jquery-ui.structure.min.css">
     <link rel="stylesheet" href="css/vendor/jquery-ui.theme.min.css">
+    <!-- pagepiling -->
+    <link rel="stylesheet" type="text/css" href="css/vendor/pagepiling.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body class="bg-light">
-    <!-- Header -->
-    <header id="top-title" class="wh-100 bg-warning jumbotron visible-small">
-        <a name="top"></a>
-        <div class="row d-flex justify-content-around bg-cats2">
-            <div class="col text-right">
-                <h1 id="top_quote" class="pb-2">
-                    Let's learn more about cats!</h1>
+    <!-- Navigation Bar (Filters) -->
+    <div class="nav bg-light" id="navbar">
+        <div class="nav-menu ">
+            <div class="blue">
+                <a href="javascript:void(0)" onclick="exitMenu()">&times;</a>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col mb-4">
+                        <h4>Choose a filter and close the menu (click on the 'x' above) to apply it on the graphs</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid justify-content-between ">
+                <div class="row">
+                    <div class="col-md-4">
+                        Search by Country<button class="ml-1 btn btn-light">
+                            <div class="mx-4 my-2" id="search"></div>
+                        </button>
+                        <p>
+                            <sub>Type in the country of your choice, no need to press 'enter'</sub>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class=" bg-light">Cat Breeds in Alphabetical Order</p>
+                        <button type="button" class="btn btn-outline-info mx-4" id="select-cat-type"></button>
+                        <p>
+                            <sub>Select a breed directly</sub>
+                        </p>
+
+
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-info" id="resetBtn">
+                            <a onclick="javascript:dc.filterAll(); dc.renderAll();">Reset All Filters</a>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row text-center d-flex justify-content-around">
-            <div class="col">
-                <h4 id="project_id">VS - Code Institute Interactive Front-End Project</h4>
-            </div>
-            <div class="col">
-                <h5>Discover cat breeds and fun snippets</h5>
-            </div>
-        </div>
-    </header>
-    <!-- Header End -->
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-md bg-light navbar-light mb-3 py-2 visible-small">
-        <div class="container-fluid d-flex justify-content-between">
-
-            <div>
-                <p class="nav-item bg-light">Search by Country
-                    <div class="mx-4 my-2" id="search"></div>
-                </p>
-            </div>
-            <div>
-                <p class=" nav-item bg-light">Cat Breeds in Alphabetical Order</p>
-                <button type="button" class="btn btn-outline-info mx-4" id="select-cat-type"></button>
+    </div>
 
 
-            </div>
-            <div>
-                <button type="button" class="btn btn-info" id="resetBtn">
-                    <a onclick="javascript:dc.filterAll(); dc.renderAll();">Reset All Filters</a>
-                </button>
-            </div>
-
-        </div>
-
-
-        </div>
-    </nav>
     <!-- Navigation Bar End -->
 
     <!-- Error message (small screens) -->
-    <div class="viewing-size my-4 px-5 text-center">
+    <div class="only-small-screens my-4 px-5 text-center">
         <img src="img/bg/bg1.svg" class="over-img" style="border: none"> This website is best viewed on big screens - please come back again to learn more about cats!
         <p class="pt-2">
             <button type="button" class="btn btn-sm btn-outline-info">
-                <a href="https://github.com/nuagesdencre/CI_InteractiveFrontend">Return to Project Page</a>
+                <a href="https://github.com/nuagesdencre/CI_InteractiveFrontend">Return to Github Project Page</a>
             </button>
         </p>
     </div>
     <!-- Error Message End -->
 
     <!-- Side Navigation Bar -->
-    <div class="p_sticky blue visible-small">
-        <a href="#cat" onclick="javascript:dc.filterAll(); dc.renderAll();" alt="Reset filters">
+    <div class="p_sticky blue only-big-screens">
+        <span onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+        </span>
+        <a href="#" onclick="javascript:dc.filterAll(); dc.renderAll();" alt="Reset filters">
             <i class="fas fa-sync"></i>
-        </a>
-        <a href="#top">
-            <i class="fas fa-arrow-circle-up"></i>
-        </a>
-        <a href="#bottom">
-            <i class="fas fa-arrow-circle-down"></i>
         </a>
     </div>
     <!-- Side Navigation Bar End-->
+
+
     <!-- Content -->
-    <main class="container align-center visible-small ">
-        <div class="row py-5">
-            <!-- Snippets about cats, alternating every 9 seconds -->
-            <div class="col mb-3 text-center">
-                <div class="alert bg-warning" id="cat_quotes">
-                    <h2>Keep an eye here for fun facts!</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col text-center">
-                <img id="cat" src="img/bg/bg1.svg">
-                <a name="cat"></a>
-            </div>
-            <div class="col-lg-8 py-4">
-                <!-- Introduction to the webpage's interactive aspects -->
-                <div class="over-img p-3">
-                    <h2>
-                        <a name="top"></a>
-                        Please click on the charts below to discover a bit more about each breed of cats! There are 96 differents breeds you can
-                        discover in total.
-                    </h2>
-                    <p>Each click on a chart adds or remove a filter to adjust your selection. Scroll down to review the cats
-                        listed in the datatable. When you are done, click the "Reset All" button or the side button
-                        <i class="fas fa-sync"></i> to retrieve all of your options.</p>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <!-- Pie chart relevant to the breed's typical or distinctive fur pattern -->
-                <div class="col-lg-4 my-3">
-                    <h4 class="mb-4 title-chart">Fur pattern</h4>
-                    <div id="piechart1" class="svg-container ">
-
+    <div id="pagepiling">
+        <!-- welcome -->
+        <div class="section bg-warning" id="top-title" data-anchor="welcome_section">
+            <div class="container">
+                <div class="row d-flex justify-content-around mx-4 bg-cats2">
+                    <div class="col text-right">
+                        <h1 id="top_quote" class="pb-2">
+                            Let's learn about cats!</h1>
                     </div>
                 </div>
-                <!-- Pie chart relevant to the breed's region of origin -->
-                <div class="col-lg-4 my-3">
-                    <h4 class="mb-4 title-chart">Region of origin</h4>
-                    <div id="piechart2" class="svg-container ">
-
+                <div class="row text-center d-flex justify-content-around">
+                    <div class="col">
+                        <h4 id="project_id">VS - Code Institute Interactive Front-End Project</h4>
                     </div>
-                </div>
-                <!-- Pie chart relevant to the breed's evolution -->
-                <div class="col-lg-4 my-3">
-                    <h4 class="mb-4 title-chart">Breed evolution</h4>
-                    <div id="piechart3" class="svg-container ">
-
+                    <div class="col">
+                        <h5>Discover cat breeds and fun snippets</h5>
                     </div>
                 </div>
             </div>
-            <div class="row">
-
-                <div class="col-lg-12 my-3">
-                    <!-- Bar chart relevant to the breed's typical fur length -->
-                    <h4 class="mb-4">Length of fur</h4>
-                    <div id="barchart" class="my-3 svg-container"></div>
-                </div>
-
-            </div>
-
         </div>
-        <div class="row">
-            <!-- Filtered elements count -->
-            <div class="col">
-                <div id='count_field' class="ml-3">
-                    <span class='filter-count'></span>
-                    selected out of
-                    <span class='total-count'></span> records.
-                </div>
-            </div>
-            <div class="col">
-                <!-- Pagination -->
-                <p class="ml-3">
-                    <span>Datatable displaying records </span>
-                    <span id="begin"></span> -
-                    <span id="end"></span>
-
-                    <input id="previous" class="btn btn-warning btn-sm ml-3" type="Button" value="Previous" onclick="javascript:last()" />
-                    <input id="next" class="btn  btn-outline-warning btn-sm" type="button" value="Next" onclick="javascript:next()" />
-
-            </div>
-        </div>
-
-        <div class="row">
-
-            <table id="datatable">
-
-            </table>
-        </div>
-    </main>
-
-    <!-- Content End -->
-    <!-- Footer -->
-    <footer class="container-fluid mt-4 visible-small">
-        <div class="row align-items-center justify-content-center bg-info">
-
-            <div class="col-4 px-4 mt-4 ">
-                <p>
-                    <button type="button" class="btn btn-warning btn-sm" id="disclaimer">Disclaimer</button>
-
-                </p>
-            </div>
-            <div class="col-4 px-4 mt-4 text-center">
-                <p>
-                    <badge class="badge badge-light"> Send feedback to: vero@nuagesdencre.com</alert>
-
-                </p>
-            </div>
-            <div>
-
-                <!-- The Modal -->
-                <div id="disclaimerModal" class="modal ">
-
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <div class="modal-header bg-info">
-                            <span class="close">&times;</span>
-                            <h2 class="mb-3">Disclaimer</h2>
+        <!-- introduction -->
+        <div class="section only-big-screens" data-anchor="introduction_section">
+            <div class="container align-center mt-5">
+                <div class="row py-3">
+                    <!-- Snippets about cats, alternating every 9 seconds -->
+                    <div class="col mb-3 text-center">
+                        <div class="alert bg-warning" id="cat_quotes">
+                            <h2>Keep an eye here for fun facts!</h2>
                         </div>
-                        <div class="container">
-                            <div class="modal-body">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col text-center">
+                        <img class="cat" src="img/bg/bg1.svg">
+                    </div>
+                    <div class="col-lg-8 py-4">
+                        <!-- Introduction to the webpage's interactive aspects -->
+                        <div class="over-img p-3">
+                            <h2>
+                                <a name="top"></a>
+                                Please click on the charts below to discover a bit more about each breed of cats! There are 96 differents breeds you can
+                                discover in total.
+                            </h2>
+                            <p> You can navigate using a
+                                <strong>mouse</strong>, the
+                                <strong>arrows on your keyboard</strong> or a
+                                <strong>touchscreen</strong>. </p>
+                            <p>Each click on a chart adds or remove a filter to adjust your selection. Scroll down to review
+                                the cats listed in the datatable. When you are done, click the "Reset All" button or the
+                                button
+                                <i class="fas fa-sync"></i> to retrieve all of your options. </p>
+                            <p>The top-left hamburger menu leads to a filter selection as well. On the left-side of the screen,
+                                you'll see dots that indicate each section of the webpage. Consider them as navigation shortcuts
+                                if needed!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- piecharts -->
+        <div class="section" id="piecharts_section" data-anchor="piecharts_section">
+            <div class="container align-center only-big-screens ">
+                <div class="container-fluid pt-5">
+                    <h2 class="text-right">Piecharts</h2>
+                    <div class="row justify-content-center">
+                        <!-- Pie chart relevant to the breed's typical or distinctive fur pattern -->
+                        <div class="col-lg-4 my-3">
+                            <h4 class="mb-4 title-chart">Fur pattern</h4>
+                            <div id="piechart1" class="svg-container ">
 
-                                <p>If you require any more information or have any questions about our site's disclaimer, please
-                                    feel free to contact us by email at vero@nuagesdencre.com</p>
-
-                                <h2>Disclaimers for VS - CI_InteractiveFrontend </h2>
-
-                                <p>"VS - CI_InteractiveFrontend" refers to the website and the contents hosted at
-                                    <strong>https://nuagesdencre.github.io/CI_InteractiveFrontend/</strong>.</p>
-                                <p>All the information on this website - https://nuagesdencre.github.io/CI_InteractiveFrontend/
-                                    - is published in good faith and as an educational project only. VS - CI_InteractiveFrontend
-                                    does not make any warranties about the completeness, reliability and accuracy of this
-                                    information. Any action you take upon the information you find on this website (VS -
-                                    CI_InteractiveFrontend), is strictly at your own risk. VS - CI_InteractiveFrontend will
-                                    not be liable for any losses and/or damages in connection with the use of our website.</p>
-
-                                <p>From our website, you can visit other websites by following hyperlinks to such external sites.
-                                    While we strive to provide only quality links to useful and ethical websites, we have
-                                    no control over the content and nature of these sites. These links to other websites
-                                    do not imply a recommendation for all the content found on these sites. Site owners and
-                                    content may change without notice and may occur before we have the opportunity to remove
-                                    a link which may have gone 'bad'.</p>
-
-                                <p>Please be also aware that when you leave our website, other sites may have different privacy
-                                    policies and terms which are beyond our control. Please be sure to check the Privacy
-                                    Policies of these sites as well as their "Terms of Service" before engaging in any business
-                                    or uploading any information.</p>
-
-                                <h2>Consent</h2>
-
-                                <p>By using our website, you hereby consent to our disclaimer and agree to its terms.</p>
-
-                                <h2>Update</h2>
-
-                                <p>Should we update, amend or make any changes to this document, those changes will be prominently
-                                    posted here.</p>
-
-
-
-                                <h2>Resources</h2>
-                                <ul>
-                                    <li>
-
-                                        This Disclaimer was created at
-                                        <a href="https://disclaimergenerator.net#wizard"> World's Free Disclaimer Generator</a>.
-
-                                    </li>
-                                    <li>
-                                        <a href="https://en.wikipedia.org/wiki/List_of_cat_breeds" target="_blank">Data source</a> used for this project
-                                    </li>
-                                    <li>
-                                        Google fonts Open Sans & Concert One (
-                                        <a href="https://fonts.google.com/specimen/Concert+One" target="_blank">link here</a> )
-                                    </li>
-                                    <li>
-                                        Bootstrap v.4.1 (
-                                        <a href="https://getbootstrap.com/" target="_blank">link here</a> )
-                                    </li>
-                                    <li>Bottom modal template (
-                                        <a href="https://www.w3schools.com/howto/howto_css_modals.asp" target="_blank">link here</a>)</li>
-                                    <li>D3.js (
-                                        <a href="https://d3js.org" target="_blank">link here</a> ), DC.js (
-                                        <a href="https://dc-js.github.io/dc.js/" target="_blank">link here</a> ) and Crossfilter (
-                                        <a href="https://square.github.io/crossfilter/" target="_blank">link here</a> )</li>
-                                    <li>
-                                        Vector images created by and property of Veronique Savard, aka nuagesdencre (
-                                        <a href="http://www.nuagesdencre.com" target="_blank">link here</a> )
-                                    </li>
-                                </ul>
                             </div>
                         </div>
-                        <div class="modal-footer bg-info">
-                            <h4 class="mb-3">Thank you for your time!</h4>
+                        <!-- Pie chart relevant to the breed's region of origin -->
+                        <div class="col-lg-4 my-3">
+                            <h4 class="mb-4 title-chart">Region of origin</h4>
+                            <div id="piechart2" class="svg-container ">
+
+                            </div>
                         </div>
+                        <!-- Pie chart relevant to the breed's evolution -->
+                        <div class="col-lg-4 my-3">
+                            <h4 class="mb-4 title-chart">Breed evolution</h4>
+                            <div id="piechart3" class="svg-container ">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- barchart -->
+        <div class="section" data-anchor="barchart_section">
+            <div class="container align-center only-big-screens ">
+                <h2 class="text-right">Barchart</h2>
+                <div class="row">
+
+                    <div class="col-lg-12 my-3">
+
+                        <h4 class="mb-4">Length of fur</h4>
+                        <div id="barchart" class="my-3 svg-container"></div>
                     </div>
 
                 </div>
-
-            </div>
-            <a name="bottom"></a>
-            <div class="col-4 px-4 mt-4 text-right">
-                <p>
-                    <button type="button" class="btn btn-sm btn-outline-light">
-                        <a href="https://github.com/nuagesdencre/CI_InteractiveFrontend">Return to Github Project</a>
-                    </button>
-
-                </p>
-
-
-
             </div>
         </div>
-    </footer>
-    <!-- Footer End -->
+        <!-- datatable -->
+        <div class="section pp-scrollable" data-anchor="datatable_section">
+            <div class="container pt-5">
+                <div class="row pt-5">
+                    <!-- Filtered elements count -->
+                    <div class="col">
+                        <div id='count_field' class="ml-3">
+                            <span class='filter-count'></span>
+                            selected out of
+                            <span class='total-count'></span> records.
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- Pagination -->
+                        <p class="ml-3">
+                            <span>Datatable displaying records </span>
+                            <span id="begin"></span> -
+                            <span id="end"></span>
+                            <input id="previous" class="btn btn-warning btn-sm ml-3" type="Button" value="Previous" onclick="javascript:last()" />
+                            <input id="next" class="btn  btn-outline-warning btn-sm" type="button" value="Next" onclick="javascript:next()" />
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <table id="datatable">
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- thank you -->
+        <div class="section" data-anchor="thank_you_section" id="thank_you_section">
+            <!-- Footer -->
+            <footer class="container mt-4 only-big-screens">
+                <div class="row align-items-center justify-content-center bg-info">
+
+                    <div class="col-4 px-4 mt-4 ">
+                        <p>
+                            <button type="button" class="btn btn-warning btn-sm" id="disclaimer">Disclaimer</button>
+
+                        </p>
+                    </div>
+                    <div class="col-4 px-4 mt-4 text-center">
+                        <h1>
+                            Thank you!
+
+                        </h1>
+                        <img class="cat" src="/img/bg/bg3.svg">
+                        <p>
+                            <badge class="badge badge-light"> Send feedback to: vero@nuagesdencre.com</alert>
+
+                        </p>
+                    </div>
+                    <div>
+
+                        <!-- The Modal -->
+                        <div id="disclaimerModal" class="modal ">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header bg-info">
+                                    <span class="close">&times;</span>
+                                    <h2 class="mb-3">Disclaimer</h2>
+                                </div>
+                                <div class="container">
+                                    <div class="modal-body">
+
+                                        <p>If you require any more information or have any questions about our site's disclaimer,
+                                            please feel free to contact us by email at vero@nuagesdencre.com</p>
+
+                                        <h2>Disclaimers for VS - CI_InteractiveFrontend </h2>
+
+                                        <p>"VS - CI_InteractiveFrontend" refers to the website and the contents hosted at
+                                            <strong>https://nuagesdencre.github.io/CI_InteractiveFrontend/</strong>.</p>
+                                        <p>All the information on this website - https://nuagesdencre.github.io/CI_InteractiveFrontend/
+                                            - is published in good faith and as an educational project only. VS - CI_InteractiveFrontend
+                                            does not make any warranties about the completeness, reliability and accuracy
+                                            of this information. Any action you take upon the information you find on this
+                                            website (VS - CI_InteractiveFrontend), is strictly at your own risk. VS - CI_InteractiveFrontend
+                                            will not be liable for any losses and/or damages in connection with the use of
+                                            our website.
+                                        </p>
+
+                                        <p>From our website, you can visit other websites by following hyperlinks to such external
+                                            sites. While we strive to provide only quality links to useful and ethical websites,
+                                            we have no control over the content and nature of these sites. These links to
+                                            other websites do not imply a recommendation for all the content found on these
+                                            sites. Site owners and content may change without notice and may occur before
+                                            we have the opportunity to remove a link which may have gone 'bad'.</p>
+
+                                        <p>Please be also aware that when you leave our website, other sites may have different
+                                            privacy policies and terms which are beyond our control. Please be sure to check
+                                            the Privacy Policies of these sites as well as their "Terms of Service" before
+                                            engaging in any business or uploading any information.</p>
+
+                                        <h2>Consent</h2>
+
+                                        <p>By using our website, you hereby consent to our disclaimer and agree to its terms.</p>
+
+                                        <h2>Update</h2>
+
+                                        <p>Should we update, amend or make any changes to this document, those changes will
+                                            be prominently posted here.</p>
+
+
+
+                                        <h2>Resources</h2>
+                                        <ul>
+                                            <li>
+
+                                                This Disclaimer was created at
+                                                <a href="https://disclaimergenerator.net#wizard"> World's Free Disclaimer Generator</a>.
+
+                                            </li>
+                                            <li>
+                                                <a href="https://en.wikipedia.org/wiki/List_of_cat_breeds" target="_blank">Data source</a> used for this project
+                                            </li>
+                                            <li>
+                                                Google fonts Open Sans & Concert One (
+                                                <a href="https://fonts.google.com/specimen/Concert+One" target="_blank">link here</a> )
+                                            </li>
+                                            <li>
+                                                Bootstrap v.4.1 (
+                                                <a href="https://getbootstrap.com/" target="_blank">link here</a> )
+                                            </li>
+                                            <li>
+                                                Pagepiling (
+                                                <a href="https://github.com/alvarotrigo/pagePiling.js"> link here</a>)
+                                            </li>
+                                            <li>Bottom modal template (
+                                                <a href="https://www.w3schools.com/howto/howto_css_modals.asp" target="_blank">link here</a>)</li>
+                                            <li>D3.js (
+                                                <a href="https://d3js.org" target="_blank">link here</a> ), DC.js (
+                                                <a href="https://dc-js.github.io/dc.js/" target="_blank">link here</a> ) and Crossfilter (
+                                                <a href="https://square.github.io/crossfilter/" target="_blank">link here</a> )</li>
+                                            <li>
+                                                Vector images created by and property of Veronique Savard, aka nuagesdencre (
+                                                <a href="http://www.nuagesdencre.com" target="_blank">link here</a> )
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="modal-footer bg-info">
+                                    <h4 class="mb-3">Thank you for your time!</h4>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <a name="bottom"></a>
+                    <div class="col-4 px-4 mt-4 text-right">
+                        <p>
+                            <button type="button" class="btn btn-sm btn-outline-light">
+                                <a href="https://github.com/nuagesdencre/CI_InteractiveFrontend">Return to Github Project</a>
+                            </button>
+
+                        </p>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer End -->
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!-- Content End -->
+
 
     <!-- External JS libraries -->
     <script src="js/vendor/jquery.min.js"></script>
@@ -329,7 +395,7 @@
     <script src="js/vendor/crossfilter.min.js"></script>
     <script src="js/vendor/dc.min.js"></script>
     <script src="js/vendor/queue.js"></script>
-
+    <script type="text/javascript" src="js/vendor/pagepiling.js"></script>
     <!-- Custom JS -->
     <script src="js/main.js"></script>
     <script src="js/animation.js"></script>
