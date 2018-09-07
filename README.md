@@ -106,7 +106,7 @@ The project is live here: https://nuagesdencre.github.io/CI_InteractiveFrontend/
 ## Hurdles
 
 - GitHub organisation: I realised quite far in the project that the git commits require a new branch for every new feature or bug for a clearer understanding. 
-- Overall UX: After presenting my webpage to a few children, I quickly noticed 2 things: the attention span is limited and the focus needs to be on one thing at a time. This is why I decided to go ahead with a cleaner, powerpoint-like presentation. I discovered the plugin 'pagepiling' while experimenting with different approaches that also allowed for navigation using the keyboard instead of the mouse or touchscreen.
+- Overall UX: After presenting my webpage to a few children, I quickly noticed 2 things: their attention span is limited, which means they can normally focus on one element (or image) at a time. This is why I decided to go ahead with a cleaner, powerpoint-like presentation instead of the initial scrolling-down amalgamation of the charts. I discovered the plugin 'pagepiling' while experimenting with different approaches that also allowed for navigation using the keyboard instead of the mouse or touchscreen.
   
 ## Credits and Content
 

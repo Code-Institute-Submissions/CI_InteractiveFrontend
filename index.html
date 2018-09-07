@@ -35,7 +35,6 @@
 
 <body class="bg-light">
     <!-- Navigation Bar (Filters) -->
-
     <div class="nav bg-light" id="navbar">
         <div class="nav-menu ">
             <div class="blue">
@@ -43,17 +42,17 @@
             </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col">
-                        <h4>Choose a filter and close the menu to apply it on the graphs</h4>
+                    <div class="col mb-4">
+                        <h4>Choose a filter and close the menu (click on the 'x' above) to apply it on the graphs</h4>
                     </div>
                 </div>
             </div>
             <div class="container-fluid justify-content-between ">
                 <div class="row">
                     <div class="col-md-4">
-                        <p class=" bg-light">Search by Country
+                        Search by Country<button class="ml-1 btn btn-light">
                             <div class="mx-4 my-2" id="search"></div>
-                        </p>
+                        </button>
                         <p>
                             <sub>Type in the country of your choice, no need to press 'enter'</sub>
                         </p>
@@ -81,18 +80,18 @@
     <!-- Navigation Bar End -->
 
     <!-- Error message (small screens) -->
-    <div class="viewing-size my-4 px-5 text-center">
+    <div class="only-small-screens my-4 px-5 text-center">
         <img src="img/bg/bg1.svg" class="over-img" style="border: none"> This website is best viewed on big screens - please come back again to learn more about cats!
         <p class="pt-2">
             <button type="button" class="btn btn-sm btn-outline-info">
-                <a href="https://github.com/nuagesdencre/CI_InteractiveFrontend">Return to Project Page</a>
+                <a href="https://github.com/nuagesdencre/CI_InteractiveFrontend">Return to Github Project Page</a>
             </button>
         </p>
     </div>
     <!-- Error Message End -->
 
     <!-- Side Navigation Bar -->
-    <div class="p_sticky blue visible-small">
+    <div class="p_sticky blue only-big-screens">
         <span onclick="openMenu()">
             <i class="fas fa-bars"></i>
         </span>
@@ -106,25 +105,27 @@
     <!-- Content -->
     <div id="pagepiling">
         <!-- welcome -->
-        <div class="section bg-warning visible-small" id="top-title" data-anchor="welcome_section">
-            <div class="row d-flex justify-content-around mx-4 bg-cats2">
-                <div class="col text-right">
-                    <h1 id="top_quote" class="pb-2">
-                        Let's learn more about cats!</h1>
+        <div class="section bg-warning" id="top-title" data-anchor="welcome_section">
+            <div class="container">
+                <div class="row d-flex justify-content-around mx-4 bg-cats2">
+                    <div class="col text-right">
+                        <h1 id="top_quote" class="pb-2">
+                            Let's learn about cats!</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="row text-center d-flex justify-content-around">
-                <div class="col">
-                    <h4 id="project_id">VS - Code Institute Interactive Front-End Project</h4>
-                </div>
-                <div class="col">
-                    <h5>Discover cat breeds and fun snippets</h5>
+                <div class="row text-center d-flex justify-content-around">
+                    <div class="col">
+                        <h4 id="project_id">VS - Code Institute Interactive Front-End Project</h4>
+                    </div>
+                    <div class="col">
+                        <h5>Discover cat breeds and fun snippets</h5>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- introduction -->
-        <div class="section" data-anchor="introduction_section">
-            <div class="container align-center visible-small">
+        <div class="section only-big-screens" data-anchor="introduction_section">
+            <div class="container align-center mt-5">
                 <div class="row py-3">
                     <!-- Snippets about cats, alternating every 9 seconds -->
                     <div class="col mb-3 text-center">
@@ -145,10 +146,17 @@
                                 Please click on the charts below to discover a bit more about each breed of cats! There are 96 differents breeds you can
                                 discover in total.
                             </h2>
+                            <p> You can navigate using a
+                                <strong>mouse</strong>, the
+                                <strong>arrows on your keyboard</strong> or a
+                                <strong>touchscreen</strong>. </p>
                             <p>Each click on a chart adds or remove a filter to adjust your selection. Scroll down to review
                                 the cats listed in the datatable. When you are done, click the "Reset All" button or the
                                 button
-                                <i class="fas fa-sync"></i> to retrieve all of your options</p>
+                                <i class="fas fa-sync"></i> to retrieve all of your options. </p>
+                            <p>The top-left hamburger menu leads to a filter selection as well. On the left-side of the screen,
+                                you'll see dots that indicate each section of the webpage. Consider them as navigation shortcuts
+                                if needed!</p>
                         </div>
                     </div>
                 </div>
@@ -156,9 +164,9 @@
         </div>
         <!-- piecharts -->
         <div class="section" id="piecharts_section" data-anchor="piecharts_section">
-            <div class="container align-center visible-small ">
-
-                <div class="container-fluid">
+            <div class="container align-center only-big-screens ">
+                <div class="container-fluid pt-5">
+                    <h2 class="text-right">Piecharts</h2>
                     <div class="row justify-content-center">
                         <!-- Pie chart relevant to the breed's typical or distinctive fur pattern -->
                         <div class="col-lg-4 my-3">
@@ -187,18 +195,14 @@
         </div>
         <!-- barchart -->
         <div class="section" data-anchor="barchart_section">
-            <div class="container align-center visible-small ">
+            <div class="container align-center only-big-screens ">
+                <h2 class="text-right">Barchart</h2>
+                <div class="row">
 
-                <div class="container-fluid">
+                    <div class="col-lg-12 my-3">
 
-                    <div class="row">
-
-                        <div class="col-lg-12 my-3">
-                            <!-- Bar chart relevant to the breed's typical fur length -->
-                            <h4 class="mb-4">Length of fur</h4>
-                            <div id="barchart" class="my-3 svg-container"></div>
-                        </div>
-
+                        <h4 class="mb-4">Length of fur</h4>
+                        <div id="barchart" class="my-3 svg-container"></div>
                     </div>
 
                 </div>
@@ -206,8 +210,8 @@
         </div>
         <!-- datatable -->
         <div class="section pp-scrollable" data-anchor="datatable_section">
-            <div class="container">
-                <div class="row my-3">
+            <div class="container pt-5">
+                <div class="row pt-5">
                     <!-- Filtered elements count -->
                     <div class="col">
                         <div id='count_field' class="ml-3">
@@ -222,19 +226,14 @@
                             <span>Datatable displaying records </span>
                             <span id="begin"></span> -
                             <span id="end"></span>
-
                             <input id="previous" class="btn btn-warning btn-sm ml-3" type="Button" value="Previous" onclick="javascript:last()" />
                             <input id="next" class="btn  btn-outline-warning btn-sm" type="button" value="Next" onclick="javascript:next()" />
-
                     </div>
                 </div>
             </div>
-
             <div class="container">
                 <div class="row">
-
                     <table id="datatable">
-
                     </table>
                 </div>
             </div>
@@ -242,7 +241,7 @@
         <!-- thank you -->
         <div class="section" data-anchor="thank_you_section" id="thank_you_section">
             <!-- Footer -->
-            <footer class="container-fluid mt-4 visible-small">
+            <footer class="container mt-4 only-big-screens">
                 <div class="row align-items-center justify-content-center bg-info">
 
                     <div class="col-4 px-4 mt-4 ">
@@ -254,8 +253,9 @@
                     <div class="col-4 px-4 mt-4 text-center">
                         <h1>
                             Thank you!
-                            
-                        </h1><img class="cat" src="/img/bg/bg3.svg">
+
+                        </h1>
+                        <img class="cat" src="/img/bg/bg3.svg">
                         <p>
                             <badge class="badge badge-light"> Send feedback to: vero@nuagesdencre.com</alert>
 
@@ -366,9 +366,6 @@
                             </button>
 
                         </p>
-
-
-
                     </div>
                 </div>
             </footer>

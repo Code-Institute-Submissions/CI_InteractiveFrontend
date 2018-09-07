@@ -99,7 +99,6 @@ $(document).ready(function() {
     },
     normalScrollElements: null,
     normalScrollElementTouchThreshold: 5,
-    touchSensitivity: 5,
     keyboardScrolling: true,
     sectionSelector: ".section",
     animateAnchor: false,
@@ -110,10 +109,11 @@ $(document).ready(function() {
 
 //Media Queries
 
-$(window).on('resize', function() {
-  if($(window).width() < 991) {
-      $('#piecharts_section').addClass('pp-scrollable');
-      $('#thank_you_section').addClass('pp-scrollable');
-  }
-});
+checkSize();
+window.addEventListener('resize', checkSize);
 
+function checkSize(){if(document.documentElement.clientWidth < 991) {
+  $('#piecharts_section').addClass('pp-scrollable');
+  $('#thank_you_section').addClass('pp-scrollable');
+}
+}
