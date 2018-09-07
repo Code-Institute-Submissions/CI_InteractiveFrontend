@@ -34,32 +34,45 @@
 </head>
 
 <body class="bg-light">
-    <!-- Navigation Bar -->
+    <!-- Navigation Bar (Filters) -->
 
     <div class="nav bg-light" id="navbar">
-        <div class="nav-menu">
+        <div class="nav-menu ">
             <div class="blue">
-                <a href="javascript:void(0)" class="closebtn" onclick="exitMenu()">&times;</a>
+                <a href="javascript:void(0)" onclick="exitMenu()">&times;</a>
             </div>
-            <div class="container-fluid d-flex justify-content-between">
-
-                <div>
-                    <p class="nav-item bg-light">Search by Country
-                        <div class="mx-4 my-2" id="search"></div>
-                    </p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h4>Choose a filter and close the menu to apply it on the graphs</h4>
+                    </div>
                 </div>
-                <div>
-                    <p class=" nav-item bg-light">Cat Breeds in Alphabetical Order</p>
-                    <button type="button" class="btn btn-outline-info mx-4" id="select-cat-type"></button>
+            </div>
+            <div class="container-fluid justify-content-between ">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class=" bg-light">Search by Country
+                            <div class="mx-4 my-2" id="search"></div>
+                        </p>
+                        <p>
+                            <sub>Type in the country of your choice, no need to press 'enter'</sub>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class=" bg-light">Cat Breeds in Alphabetical Order</p>
+                        <button type="button" class="btn btn-outline-info mx-4" id="select-cat-type"></button>
+                        <p>
+                            <sub>Select a breed directly</sub>
+                        </p>
 
 
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-info" id="resetBtn">
+                            <a onclick="javascript:dc.filterAll(); dc.renderAll();">Reset All Filters</a>
+                        </button>
+                    </div>
                 </div>
-                <div>
-                    <button type="button" class="btn btn-info" id="resetBtn">
-                        <a onclick="javascript:dc.filterAll(); dc.renderAll();">Reset All Filters</a>
-                    </button>
-                </div>
-
             </div>
         </div>
     </div>
@@ -92,7 +105,8 @@
 
     <!-- Content -->
     <div id="pagepiling">
-        <div class="section bg-warning visible-small" id="top-title">
+        <!-- welcome -->
+        <div class="section bg-warning visible-small" id="top-title" data-anchor="welcome_section">
             <div class="row d-flex justify-content-around mx-4 bg-cats2">
                 <div class="col text-right">
                     <h1 id="top_quote" class="pb-2">
@@ -108,9 +122,10 @@
                 </div>
             </div>
         </div>
-        <div class="section">
+        <!-- introduction -->
+        <div class="section" data-anchor="introduction_section">
             <div class="container align-center visible-small">
-                <div class="row py-5">
+                <div class="row py-3">
                     <!-- Snippets about cats, alternating every 9 seconds -->
                     <div class="col mb-3 text-center">
                         <div class="alert bg-warning" id="cat_quotes">
@@ -120,8 +135,7 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col text-center">
-                        <img id="cat" src="img/bg/bg1.svg">
-                        <a name="cat"></a>
+                        <img class="cat" src="img/bg/bg1.svg">
                     </div>
                     <div class="col-lg-8 py-4">
                         <!-- Introduction to the webpage's interactive aspects -->
@@ -133,14 +147,15 @@
                             </h2>
                             <p>Each click on a chart adds or remove a filter to adjust your selection. Scroll down to review
                                 the cats listed in the datatable. When you are done, click the "Reset All" button or the
-                                side button
-                                <i class="fas fa-sync"></i> to retrieve all of your options.</p>
+                                button
+                                <i class="fas fa-sync"></i> to retrieve all of your options</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section">
+        <!-- piecharts -->
+        <div class="section" id="piecharts_section" data-anchor="piecharts_section">
             <div class="container align-center visible-small ">
 
                 <div class="container-fluid">
@@ -170,7 +185,8 @@
                 </div>
             </div>
         </div>
-        <div class="section">
+        <!-- barchart -->
+        <div class="section" data-anchor="barchart_section">
             <div class="container align-center visible-small ">
 
                 <div class="container-fluid">
@@ -188,12 +204,10 @@
                 </div>
             </div>
         </div>
-        <div class="section">
-            <div class="container-fluid">
-
-
-
-                <div class="row">
+        <!-- datatable -->
+        <div class="section pp-scrollable" data-anchor="datatable_section">
+            <div class="container">
+                <div class="row my-3">
                     <!-- Filtered elements count -->
                     <div class="col">
                         <div id='count_field' class="ml-3">
@@ -216,7 +230,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
 
                     <table id="datatable">
@@ -225,7 +239,8 @@
                 </div>
             </div>
         </div>
-        <div class="section">
+        <!-- thank you -->
+        <div class="section" data-anchor="thank_you_section" id="thank_you_section">
             <!-- Footer -->
             <footer class="container-fluid mt-4 visible-small">
                 <div class="row align-items-center justify-content-center bg-info">
@@ -237,6 +252,10 @@
                         </p>
                     </div>
                     <div class="col-4 px-4 mt-4 text-center">
+                        <h1>
+                            Thank you!
+                            
+                        </h1><img class="cat" src="/img/bg/bg3.svg">
                         <p>
                             <badge class="badge badge-light"> Send feedback to: vero@nuagesdencre.com</alert>
 
@@ -313,6 +332,10 @@
                                             <li>
                                                 Bootstrap v.4.1 (
                                                 <a href="https://getbootstrap.com/" target="_blank">link here</a> )
+                                            </li>
+                                            <li>
+                                                Pagepiling (
+                                                <a href="https://github.com/alvarotrigo/pagePiling.js"> link here</a>)
                                             </li>
                                             <li>Bottom modal template (
                                                 <a href="https://www.w3schools.com/howto/howto_css_modals.asp" target="_blank">link here</a>)</li>

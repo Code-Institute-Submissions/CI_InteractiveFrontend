@@ -19,6 +19,7 @@ h1,
 h2,
 h3,
 h4,
+h6,
 th {
   font-family: "Concert One";
 }
@@ -60,26 +61,31 @@ Header & Body Styling
   z-index: 9998;
   left: 0;
   top: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  overflow-x: hidden; 
+  transition: 0.5s; 
 }
 
 .nav-menu {
   position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  top: 25%; 
+  width: 100%; 
+  text-align: center; 
+  margin-top: 30px;
+}
+#pp-nav {
+  margin-right: auto;
+  margin-left: auto;
 }
 
-#cat {
-  height: 20vh;
+.cat {
   border: none;
+  max-height: 350px;
 }
 
 .bg-cats2 {
   background: url("../img/bg/bg3.svg") no-repeat;
 }
+
 .over-img {
   background: linear-gradient(
     to left,
@@ -101,9 +107,10 @@ html {
   overflow-x: hidden;
 }
 
+/* removal of scrollbar for better ux  */
 ::-webkit-scrollbar {
-  width: 0px; /* remove scrollbar space */
-  background: transparent; /* optional: just make scrollbar invisible */
+  width: 0px; 
+  background: transparent; 
 }
 
 /* 
@@ -240,6 +247,8 @@ Media Queries
   .modal-header,
   .modal-footer {
     color: white;
+    display: block;
+    text-align: right;
   }
 
   /* 
@@ -286,7 +295,7 @@ Media Queries
       opacity: 1;
     }
   }
-
+ /* end of modal */
   /*
 
   Table

@@ -65,7 +65,9 @@ setInterval(function() {
     $("#cat_quotes").fadeIn("slow");
   });
 }, 9999);
-// Navigation
+
+
+// Filter Menu
 
 function openMenu() {
   document.getElementById("navbar").style.width = "100%";
@@ -80,10 +82,10 @@ function exitMenu() {
 $(document).ready(function() {
   $("#pagepiling").pagepiling({
     menu: null,
-    direction: "vertical",
+    direction: "horizontal",
     verticalCentered: true,
     sectionsColor: [ '##17a2b8', '#f2f2f2','#7BAABE' ,'#17a2b8','#f2f2f2','#17a2b8'],
-    anchors: [],
+    anchors: ["welcome_section", "introduction_section", "piecharts_section", "barchart_section", "datatable_section","thank_you_section"],
     scrollingSpeed: 700,
     easing: "swing",
     loopBottom: false,
@@ -92,8 +94,8 @@ $(document).ready(function() {
     navigation: {
       textColor: "#000",
       bulletsColor: "#000",
-      position: "right",
-      tooltips: ["top", "introduction", "datatable", "bottom", "thank you"]
+      position: "",
+      tooltips: []
     },
     normalScrollElements: null,
     normalScrollElementTouchThreshold: 5,
@@ -102,9 +104,16 @@ $(document).ready(function() {
     sectionSelector: ".section",
     animateAnchor: false,
     
-    //events
-    onLeave: function(index, nextIndex, direction) {},
-    afterLoad: function(anchorLink, index) {},
-    afterRender: function() {}
   });
 });
+
+
+//Media Queries
+
+$(window).on('resize', function() {
+  if($(window).width() < 991) {
+      $('#piecharts_section').addClass('pp-scrollable');
+      $('#thank_you_section').addClass('pp-scrollable');
+  }
+});
+
