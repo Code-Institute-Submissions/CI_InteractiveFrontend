@@ -28,9 +28,9 @@ I incorporated links and buttons to allow my user to navigate the site, along wi
 
 I endeavoured to make the site is as responsive as possible, however I realised that the best user experience with charts necessitated a bigger screen than most smartphones. Charts using D3.js are not responsive as they are designed for desktop or large-screen viewing. I tested this by checking the site on different screen sizes and browsers. 
 
-My chart containers are responsive however and will be displayed differently at the medium and large breaking points. Charts using D3.js are not responsive as they are designed for desktop or large-screen viewing.
+My chart containers are responsive however and will be displayed differently at the medium and large breaking points. Again, charts using D3.js are not responsive as they are designed for desktop or large-screen viewing.
 
-I included a message to invite visitors back to the site using a bigger viewport.
+To ensure visitors would not miss out, I included a message to invite visitors back to the site using a bigger viewport.
 
 
 ## Process
@@ -83,18 +83,39 @@ The project live here: https://nuagesdencre.github.io/CI_InteractiveFrontend/
 
 ## Testing
 
+To the best of my abilitities, I conducted and documented tests to ensure that all of my website's functionality work well.
+
 ```
 Jasmine: Jasmine testing is useful when input is given by the visitor, and when the DOM generates  & returns a value.
-This parcticular project did not give me the opportunity to use it.
+
+This particular project did not give me the opportunity to use it.
+
 However I have inspected the javascript and jQuery code using jsLint and jsHint (http://jshint.com/).
 
 Screen size:
 - Tested on various devices and screen sizes
 - Message displayed when screen size deemed too small for a proper view of the dashboard. This message invites the viewer to return to the page using a larger size screen.
+
 - Requested inputs from friends and family members using a variety of devices to ensure an equal viewing experience.
 
 ```
-To the best of my abilitities, I conducted and documented tests to ensure that all of my website's functionality work well.
+* Errors and warnings found using [W3C CSS Validation service](https://jigsaw.w3.org/css-validator/validator)
+ 
+This error seems relevant only to the transparency percentage of the box shadow.
+  > URI : TextArea
+	table thead tr, table tbody tr, table	0.282 is not a valid color 3 or 6 hexadecimals numbers ), 0 2px 2px 0 rgba(23, 163, 184, 0.282), 0 1px 5px 0 rgba(23, 163, 184, 0.282)
+
+This warning relates to the apparence of the selection drop-down menu. The transparency on both elements is desired.
+> 	.dc-select-menu	Same color for background-color and border-color
+
+* Errors and warnings found using [Nu Html Checker](https://validator.w3.org/)
+ 
+The following errors are being ignored as no alternative seem suitable in the context of this project.
+> Error: The element a must not appear as a descendant of the button element.
+
+> Error: Element badge not allowed as child of element p in this context.
+
+
 
 
 ## Deployment 
