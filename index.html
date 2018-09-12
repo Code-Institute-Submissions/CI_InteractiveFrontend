@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
 
@@ -51,7 +51,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         Search by Country<button class="ml-1 btn btn-light">
-                            <div class="mx-4 my-2" id="search"></div>
+                            <a class="mx-4 my-2" id="search"></a>
                         </button>
                         <p>
                             <sub>Type in the country of your choice, no need to press 'enter'</sub>
@@ -68,7 +68,7 @@
                     </div>
                     <div class="col-md-4">
                         <button type="button" class="btn btn-info" id="resetBtn">
-                            <a onclick="javascript:dc.filterAll(); dc.renderAll();">Reset All Filters</a>
+                            <span onclick="javascript:dc.filterAll(); dc.renderAll();">Reset All Filters</span>
                         </button>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
 
     <!-- Error message (small screens) -->
     <div class="only-small-screens my-4 px-5 text-center">
-        <img src="img/bg/bg1.svg" class="over-img" style="border: none"> This website is best viewed on big screens - please come back again to learn more about cats!
+        <img src="img/bg/bg1.svg" alt="cute cat face" class="over-img" style="border: none"> This website is best viewed on big screens - please come back again to learn more about cats!
         <p class="pt-2">
             <button type="button" class="btn btn-sm btn-outline-info">
                 <a href="https://github.com/nuagesdencre/CI_InteractiveFrontend">Return to Github Project Page</a>
@@ -95,7 +95,7 @@
         <span onclick="openMenu()">
             <i class="fas fa-bars"></i>
         </span>
-        <a href="#" onclick="javascript:dc.filterAll(); dc.renderAll();" alt="Reset filters">
+        <a href="#" onclick="javascript:dc.filterAll(); dc.renderAll();">
             <i class="fas fa-sync"></i>
         </a>
     </div>
@@ -136,13 +136,12 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col text-center">
-                        <img class="cat" src="img/bg/bg1.svg">
+                        <img class="cat" src="img/bg/bg1.svg" alt="cute cat face">
                     </div>
                     <div class="col-lg-8 py-4">
                         <!-- Introduction to the webpage's interactive aspects -->
                         <div class="over-img p-3">
                             <h2>
-                                <a name="top"></a>
                                 Please click on the charts below to discover a bit more about each breed of cats! There are 96 differents breeds you can
                                 discover in total.
                             </h2>
@@ -255,10 +254,9 @@
                             Thank you!
 
                         </h1>
-                        <img class="cat" src="img/bg/bg3.svg">
+                        <img class="cat" alt="cute cat face" src="img/bg/bg3.svg">
                         <p>
-                            <badge class="badge badge-light"> Send feedback to: vero@nuagesdencre.com</alert>
-
+                            <badge class="badge badge-light"> Send feedback to: vero@nuagesdencre.com</badge>
                         </p>
                     </div>
                     <div>
@@ -358,7 +356,6 @@
                         </div>
 
                     </div>
-                    <a name="bottom"></a>
                     <div class="col-4 px-4 mt-4 text-right">
                         <p>
                             <button type="button" class="btn btn-sm btn-outline-light">
@@ -395,7 +392,7 @@
     <script src="js/vendor/crossfilter.min.js"></script>
     <script src="js/vendor/dc.min.js"></script>
     <script src="js/vendor/queue.js"></script>
-    <script type="text/javascript" src="js/vendor/pagepiling.js"></script>
+    <script src="js/vendor/pagepiling.js"></script>
     <!-- Custom JS -->
     <script src="js/main.js"></script>
     <script src="js/animation.js"></script>

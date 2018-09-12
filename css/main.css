@@ -323,7 +323,7 @@ Media Queries
     line-height: 2;
     text-align: center;
     background-color: #fff;
-    box-shadow: 0 3px 1px -2px rgb(114, 194, 218, 0.2),
+    box-shadow: 0 3px 1px -2px rgb(114, 194, 218, 0.28),
       0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   }
 
@@ -343,7 +343,7 @@ Media Queries
   td.dc-table-column._0 {
     font-weight: 700;
     text-transform: uppercase;
-    background-color: #17a3b848;
+    background-color: rgba(23, 163, 184, 0.282);
   }
   table tbody tr:hover {
     background-color: #cfedfd;
