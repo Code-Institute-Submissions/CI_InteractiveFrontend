@@ -50,7 +50,8 @@ var datacount = dc.dataCount("#count_field");
 /*
    
     End Charts Name
-  */
+*/
+
 /* Dimensions*/
 
 /*
@@ -71,7 +72,7 @@ function show_barchart(ndx) {
     .dimension(dim)
     .group(group)
     .on("filtered", chartCallback)
-    .margins({ top:40, right: 40, bottom: 100, left: 40 })
+    .margins({ top: 40, right: 40, bottom: 100, left: 40 })
     .xUnits(dc.units.ordinal)
     .x(
       d3.scaleBand().domain(
@@ -82,7 +83,7 @@ function show_barchart(ndx) {
     )
     .renderHorizontalGridLines(true)
     .renderLabel(true)
-    .y(d3.scaleLinear().domain([0,50]))
+    .y(d3.scaleLinear().domain([0, 50]))
     .yAxisLabel("Number of breeds")
     .title(function(d) {
       return d.key;
@@ -164,7 +165,14 @@ function show_piechart1(ndx) {
     .radius(150)
     .renderLabel(true)
     .colors(
-      d3.scaleOrdinal(["#3192bd","#3182bd", "#6aa0e6", "#9ecae1", "#c6dbef", "#dadaeb"])
+      d3.scaleOrdinal([
+        "#3192bd",
+        "#3182bd",
+        "#6aa0e6",
+        "#9ecae1",
+        "#c6dbef",
+        "#dadaeb"
+      ])
     )
     .title(function(d) {
       return "Pattern: " + d.key;
@@ -199,7 +207,14 @@ function show_piechart2(ndx) {
     .radius(150)
     .renderLabel(true)
     .colors(
-      d3.scaleOrdinal(["#3192bd","#3182bd", "#6aa0e6", "#9ecae1", "#c6dbef", "#dadaeb"])
+      d3.scaleOrdinal([
+        "#3192bd",
+        "#3182bd",
+        "#6aa0e6",
+        "#9ecae1",
+        "#c6dbef",
+        "#dadaeb"
+      ])
     )
     .title(function(d) {
       return d.key;
@@ -234,7 +249,14 @@ function show_piechart3(ndx) {
     .radius(150)
     .renderLabel(true)
     .colors(
-      d3.scaleOrdinal(["#3192bd","#3182bd", "#6aa0e6", "#9ecae1", "#c6dbef", "#77daeb"])
+      d3.scaleOrdinal([
+        "#3192bd",
+        "#3182bd",
+        "#6aa0e6",
+        "#9ecae1",
+        "#c6dbef",
+        "#77daeb"
+      ])
     )
     .title(function(d) {
       return "Origin: " + d.key;

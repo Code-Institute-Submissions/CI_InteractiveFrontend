@@ -119,3 +119,18 @@ function checkSize(){if(document.documentElement.clientWidth < 991) {
   $('#btn-sm-view').addClass('mb-3');
 }
 }
+
+// input from the search text widget not matching data available 
+
+function noDataMatch() {
+  if ($(".dc-table-column").length == 0) {
+    $("#no_data_found, #no_data_found_too")
+      .html(
+        "<alert class='mx-5 alert-warning'>No luck! We didn't find anything. Try something else. </alert>"
+      )
+      .show()
+      .fadeOut(2000);
+  } else {
+    $("#no_data_found, #no_data_found_too").hide();
+  }
+}
