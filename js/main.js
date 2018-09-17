@@ -67,11 +67,11 @@ function show_barchart(ndx) {
   var group = dim.group();
   barChart
     .width(500)
-    .height(300)
+    .height(400)
     .dimension(dim)
     .group(group)
     .on("filtered", chartCallback)
-    .margins({ top: 30, right: 40, bottom: 100, left: 40 })
+    .margins({ top:40, right: 40, bottom: 100, left: 40 })
     .xUnits(dc.units.ordinal)
     .x(
       d3.scaleBand().domain(
@@ -82,6 +82,7 @@ function show_barchart(ndx) {
     )
     .renderHorizontalGridLines(true)
     .renderLabel(true)
+    .y(d3.scaleLinear().domain([0,50]))
     .yAxisLabel("Number of breeds")
     .title(function(d) {
       return d.key;
@@ -163,7 +164,7 @@ function show_piechart1(ndx) {
     .radius(150)
     .renderLabel(true)
     .colors(
-      d3.scaleOrdinal(["#3182bd", "#6baed6", "#9ecae1", "#c6dbef", "#dadaeb"])
+      d3.scaleOrdinal(["#3192bd","#3182bd", "#6aa0e6", "#9ecae1", "#c6dbef", "#dadaeb"])
     )
     .title(function(d) {
       return "Pattern: " + d.key;
@@ -172,6 +173,7 @@ function show_piechart1(ndx) {
     .dimension(dim)
     .group(group)
     .on("filtered", chartCallback)
+    .cap(5)
     .legend(
       dc
         .legend()
@@ -197,7 +199,7 @@ function show_piechart2(ndx) {
     .radius(150)
     .renderLabel(true)
     .colors(
-      d3.scaleOrdinal(["#3182bd", "#6baed6", "#9ecae1", "#c6dbef", "#dadaeb"])
+      d3.scaleOrdinal(["#3192bd","#3182bd", "#6aa0e6", "#9ecae1", "#c6dbef", "#dadaeb"])
     )
     .title(function(d) {
       return d.key;
@@ -206,6 +208,7 @@ function show_piechart2(ndx) {
     .dimension(dim)
     .group(group)
     .on("filtered", chartCallback)
+    .cap(5)
     .legend(
       dc
         .legend()
@@ -231,7 +234,7 @@ function show_piechart3(ndx) {
     .radius(150)
     .renderLabel(true)
     .colors(
-      d3.scaleOrdinal(["#3182bd", "#6baed6", "#9ecae1", "#c6dbef", "#dadaeb"])
+      d3.scaleOrdinal(["#3192bd","#3182bd", "#6aa0e6", "#9ecae1", "#c6dbef", "#77daeb"])
     )
     .title(function(d) {
       return "Origin: " + d.key;
@@ -240,6 +243,7 @@ function show_piechart3(ndx) {
     .dimension(dim)
     .group(group)
     .on("filtered", chartCallback)
+    .cap(5)
     .legend(
       dc
         .legend()

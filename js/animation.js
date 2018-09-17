@@ -84,7 +84,7 @@ $(document).ready(function() {
     menu: null,
     direction: "horizontal",
     verticalCentered: true,
-    sectionsColor: [ '##17a2b8', '#f2f2f2','#7BAABE' ,'#17a2b8','#f2f2f2','#17a2b8'],
+    sectionsColor: [ '##17a2b8', '#f2f2f2','#7BAABE' ,'#f2f2f2','#f2f2f2','#17a2b8'],
     anchors: ["welcome_section", "introduction_section", "piecharts_section", "barchart_section", "datatable_section","thank_you_section"],
     scrollingSpeed: 700,
     easing: "swing",
@@ -113,7 +113,9 @@ checkSize();
 window.addEventListener('resize', checkSize);
 
 function checkSize(){if(document.documentElement.clientWidth < 991) {
+  $('#introduction_section').addClass('pp-scrollable');
   $('#piecharts_section').addClass('pp-scrollable');
   $('#thank_you_section').addClass('pp-scrollable');
+  $('#btn-sm-view').addClass('mb-3');
 }
 }

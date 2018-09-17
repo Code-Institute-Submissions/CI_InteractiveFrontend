@@ -41,7 +41,7 @@ To ensure visitors would not miss out, I included a message to invite visitors b
 
 | User    | Purpose of visit                                                                                                                                                                                  | What the user wants                                                                                                                                                                                                                                                                                                                                                                                       | Comments                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | :------ | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Mike    | Mike wanted to impress his overseas girlfriend with his knowledge of fancy cats.                                                                                                                  | As a site visitor, Mike wants to be able to easily apply filters on the data available, so he can manipulate it accordingly.  Mike also wants to see the correct data displayed as he manipulates it, so he can analyze it.                                                                                                                                                                               | Mike quickly accessed the webpage and clicked the charts to select the hairless cat category. He used the search field to narrow down his search for the cats in Canada (where is girlfriend lives). He thought the webpage' colours were a bit bright but okay for a short visit. Mike enjoyed the random fact wheel at the top of the page, that he noticed after scrolling up and down a few times.                                                                                                                                                                                                            |
+| Mike    | Mike wanted to impress his overseas girlfriend with his knowledge of fancy cats.                                                                                                                  | As a site visitor, Mike wants to be able to easily apply filters on the data available, so he can manipulate it accordingly.  Mike also wants to see the correct data displayed as he manipulates it, so he can analyze it.                                                                                                                                                                               | Mike quickly accessed the webpage and clicked the charts to select the hairless cat category. He used the search field to narrow down his search for the cats in Canada (where is girlfriend lives). He thought the webpage' colours were a bit bright but okay for a short visit. Mike enjoyed the random fact wheel at the top section of the page, that he noticed after scrolling up and down a few times.                                                                                                                                                                                                            |
 | Lou     | Lou's daughters are eager to look at anything cute and fluffy. Lou set up the webpage on his iPad so they could look at cats together.                                                            | As a site visitor, Lou expects to see clear explanation of the data visualisations used, so he and his daughters can understand the displayed information. Lou wants to be able to easily apply filters on the data available, so he can manipulate it accordingly.                                                                                                                                       | Lou and his daughters were happy to click on the piecharts and see them be animated with each touch. The table displayed a lot of lovely pictures and Lou showed the girls how to use the pagination to see all of them. The girls enjoy the bright colors and turn the iPad in all directions to see everything.                                                                                                                                                                                                                                                                                                 |
 | Camille | Camille wishes to purchase a fancy cat she can pamper and doll up. She wants to know which cat is the most glamourous of them all and confirm the information is from a trusted, relevant source. | As a site visitor, Camille can identify the data source, so she can confirm its accuracy and relevance. Camille wants a resource where there is a clear explanation of the data visualisations used, so she can understand the displayed information. Moreover, the webpage administrator provided contact information, so Camille can inform him/her of technical issues with the page or ask questions. | At first, Camille tries to access the page using her phone - but a message advises her that the webpage can be viewed on bigger screen only. She uses her tablet instead. By clicking on the 'fur pattern' wheel, Camille is able to pinpoint the type of appareance of her future pet. She finds the Toyger quite adorable and she clicks on the 'Learn more' button within the table to access the wikipedia page for more details. Before she leaves the webpage, Camille uses the contact information available to send a question to the webmaster regarding the cat drawing displayed in the page header.   |
 | Harry   | Harry rescued a kitten while reorganising his brother-in-law's garage. He has since adopted the kitty and he now wants to know which kind of cat it could be.                                     | As a visitor, Harry expects to see clear explanation of the data visualisations used, so he can understand the displayed information. Harry also expects that access to the resource is straightforward (no login, no popups).                                                                                                                                                                            | As he accesses the page, Harry has a quick overall look (no endless paragraphs to read, no login needed, no pop-ups, okay). Harry was told by his family it could probably be a 'tabby'. He looks up in the alphabetical drop-down menu but does not see tabby right away. He carefully selects the relevant criteria on the piewheel to see the results. There are a lot of choices, so he starts with the wheels where he can read most of them. He concludes his visit  convinced that the cat is, in the end, of no breed in particular. He calls his son over to look at weird-looking cats in the meantime. |
@@ -58,8 +58,7 @@ To ensure visitors would not miss out, I included a message to invite visitors b
   
 - [Bootstrap v.4.1](https://getbootstrap.com/)  
    > Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.                         
-- [Modal template](https://www.w3schools.com/howto/howto_css_modals.asp)
-  > This modal template inspired me to include the disclaimer notice as it is currently shown on the website. I wished to disclose the source of the code accordingly, even if I have tailored the modal to the project. This modal format suited the project as it was unobtrusive and elegant - I styled it and modified the elements to match the webpage accordingly.
+
 - [Pagepiling](https://github.com/alvarotrigo/pagePiling.js)
   > JQuery plugin to create beautiful scrollable websites
 - jQuery
@@ -73,8 +72,6 @@ To ensure visitors would not miss out, I included a message to invite visitors b
   >*d3-queue* is a tiny library for running asynchronous tasks with configurable concurrency.
 
 
-
-
 I used Git & GitHub for version control. Each new piece of functionality should be in a separate commit; I proceeded with that in mind, although a bit clumsily in retrospect. I will create branches for future commits and subsquent projects!
 
 The final version of my code is hosted on GitHub Pages.
@@ -83,39 +80,76 @@ The project live here: https://nuagesdencre.github.io/CI_InteractiveFrontend/
 
 ## Testing
 
-To the best of my abilitities, I conducted and documented tests to ensure that all of my website's functionality work well.
+To the best of my abilitities, I conducted and documented tests to ensure that all of my website's functionality work well, while taking in account the user stories.
 
-```
-Jasmine: Jasmine testing is useful when input is given by the visitor, and when the DOM generates  & returns a value.
 
+1. Access and filter data on the webpage
+   
+    I. Upon access to the webpage, the second section of the webpage indicates where to find filters and how to navigate the site. The possible ways to filter the charts are through the collapsible menu (via hamburger icon), by resetting all filters at once using the double arrow icon at the top-left corner of the screen or by clicking on the charts directly.
+    
+    II.  The top-left hamburger menu reveals once clicked three diffent ways to filter the results. A note informs the visitor that the window can be closed following his/her choice.
+    
+    III. Use of the 'search' input filters the data vailable by country. If country is mispelled or does not correspond to the available data, the charts remain blank.
+    
+    IV. Use of the drop-down menu allows for the selection of a specific breed of a cat at a time. If data is already filtered, the available choices are limited.
+    
+    V. The 'reset all filters' button allows for all filters to be removed at once. The same option is available at the top-left corner of the screen when the menu is closed and at the datatable section.
+
+    VI. Regardless of where the filters are chosen, there is no issue in selecting a filter by clicking on a chart and then accessing the menu for further filtering.  
+    
+
+2. Charts
+   
+    I. The piecharts have a limited amount of slices displayed to simplify the data presented. 
+
+    II. The color palette used on all charts allows for an easier read of each element.The barchart displays multiple labels to allow for an easier view of the data available or filtered.
+
+    III.  Clicking on a slice of the piechart or on the barchart affects all other charts available on the webpage.
+
+    IV. Additional filtering is not possible through the datatable. The datatable displays the data available (and/or filtered) allowing a view of 5 elements maximum at once. This is set up to prevent too much information to be displayed, leading to the confusion of the viewer.
+
+    V. The datatable is paginated to permit access further data. Pagination is disabled if no further data can be displayed.
+
+
+3. Responsiveness of the webpage
+   
+    I. The webpage has been tested on various devices and screen sizes. I requested inputs from friends and family members using a variety of devices to ensure an equal viewing experience. Browserling [(link here)](https://www.browserling.com/) was also used review browser compatibility.
+    
+    II. A message is displayed when screen size deemed too small for a proper view of the dashboard. This message invites the viewer to return to the page using a larger sized screen.
+
+    III. The chart containers are responsive even if the charts themselves are not. The charts have been separated in different sections for a less 'crowded' or overwelming user experience (since the webpage appeals to children and adults). The charts will also be displayed differently following the medium and large breaking points of to the viewport.
+
+4. Redirection to external pages
+   
+    I. Links on the webpage are set up so that they open in a separate window. The user can keep their current view of the webpage in parallel. 
+    
+    II. Links are easily identified through the usage of button elements or highlights in a different color. For instance, the links within the datatable are yellow buttons with the value 'Learn more'. 
+
+5. Communication
+   
+    I. An introductory paragraph has been included at the top of the webpage to go through the purpose of the page and the interaction possible with its elements.
+    
+    II. A direct reference to the webmaster's email is provided at the bottom of the webpage (footer section), along with a reference in the disclaimer modal.
+ 
+    
+
+**Comments**
+
+- Jasmine : Jasmine testing is useful when input is given by the visitor, and when the DOM generates  & returns a value.
 This particular project did not give me the opportunity to use it.
-
 However I have inspected the javascript and jQuery code using jsLint and jsHint (http://jshint.com/).
 
-Screen size:
-- Tested on various devices and screen sizes
-- Message displayed when screen size deemed too small for a proper view of the dashboard. This message invites the viewer to return to the page using a larger size screen.
-
-- Requested inputs from friends and family members using a variety of devices to ensure an equal viewing experience.
-
-```
 * Errors and warnings found using [W3C CSS Validation service](https://jigsaw.w3.org/css-validator/validator)
- 
-This error seems relevant only to the transparency percentage of the box shadow.
-  > URI : TextArea
-	table thead tr, table tbody tr, table	0.282 is not a valid color 3 or 6 hexadecimals numbers ), 0 2px 2px 0 rgba(23, 163, 184, 0.282), 0 1px 5px 0 rgba(23, 163, 184, 0.282)
-
-This warning relates to the apparence of the selection drop-down menu. The transparency on both elements is desired.
-> 	.dc-select-menu	Same color for background-color and border-color
+  
+  This warning relates to the apparence of the selection drop-down menu. The transparency on both elements is desired.
+  > 	.dc-select-menu	Same color for background-color and border-color
 
 * Errors and warnings found using [Nu Html Checker](https://validator.w3.org/)
- 
-The following errors are being ignored as no alternative seem suitable in the context of this project.
-> Error: The element a must not appear as a descendant of the button element.
-
-> Error: Element badge not allowed as child of element p in this context.
-
-
+  
+  The following errors are being ignored as no alternative seem suitable in the context of this project.
+  > Error: The element a must not appear as a descendant of the button element.
+  
+  > Error: Element badge not allowed as child of element p in this context.
 
 
 ## Deployment 
@@ -141,8 +175,8 @@ This information has also been included (in fewer words) in the disclaimer porti
    > The webpage's fanciful fonts can be found, along with many other great fonts, in Google's own collection.    
 - [Bootstrap v.4.1](https://getbootstrap.com/)  
                         
-- [Modal template](https://www.w3schools.com/howto/howto_css_modals.asp)
-  > This modal template inspired me to include the disclaimer notice as it is currently shown on the website. I wished to disclose the source of the code accordingly, even if I have tailored the modal to the project.            
+- [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp)
+  > This modal template inspired me to include the disclaimer notice as it is currently shown on the website. I wished to disclose the source of the code accordingly, even if I have tailored the modal to the project. This modal format suited the project as it was unobtrusive and elegant - I styled it and modified the elements to match the webpage accordingly.           
 - The vector images were created by and remain property of my humble self :) [(Veronique Savard)](http://www.nuagesdencre.com)
                                     
 
