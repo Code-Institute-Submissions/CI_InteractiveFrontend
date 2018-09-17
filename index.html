@@ -51,10 +51,11 @@
                 <div class="row">
                     <div class="col-md-4">
                         Search by Country
-                        <form class="mx-4 my-2 btn btn-light" id="search">
+                        <form class="mx-4 my-2 btn btn-light" onkeyup="noDataMatch()" id="search">
                         </form>
-                        <p>
+                        <p><p id="no_data_found_too"></p>
                             <sub>Type in the country of your choice, no need to press 'enter'</sub>
+                            
                         </p>
                     </div>
                     <div class="col-md-4">
@@ -235,6 +236,7 @@
                 <div class="row">
                     <table id="datatable">
                     </table>
+                    <div id="no_data_found"></div>
                 </div>
             </div>
         </div>

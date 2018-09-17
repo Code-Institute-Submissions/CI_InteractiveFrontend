@@ -15,7 +15,7 @@ In this case, I decided to pick a whimsical subject and present it as simply, pl
 ### *Let's learn about cats!*
 
 ## Features
-- Page by page presentation of content for a better user experience (using pagepiling.js)
+- Page by page presentation of content for a better user experience (using pagePiling.js)
 - Charts created using d3.js, dc.js and crossfilter
 - Interactive filtering of data reflected in a datatable
    > The datatable clearly displays the information available and offers an external link to the associated wikipedia page for more details 
@@ -59,7 +59,7 @@ To ensure visitors would not miss out, I included a message to invite visitors b
 - [Bootstrap v.4.1](https://getbootstrap.com/)  
    > Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.                         
 
-- [Pagepiling](https://github.com/alvarotrigo/pagePiling.js)
+- [pagePiling](https://github.com/alvarotrigo/pagePiling.js)
   > JQuery plugin to create beautiful scrollable websites
 - jQuery
   > jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML.
@@ -90,12 +90,14 @@ To the best of my abilitities, I conducted and documented tests to ensure that a
     II.  The top-left hamburger menu reveals once clicked three diffent ways to filter the results. A note informs the visitor that the window can be closed following his/her choice.
     
     III. Use of the 'search' input filters the data vailable by country. If country is mispelled or does not correspond to the available data, the charts remain blank.
-    
-    IV. Use of the drop-down menu allows for the selection of a specific breed of a cat at a time. If data is already filtered, the available choices are limited.
-    
-    V. The 'reset all filters' button allows for all filters to be removed at once. The same option is available at the top-left corner of the screen when the menu is closed and at the datatable section.
 
-    VI. Regardless of where the filters are chosen, there is no issue in selecting a filter by clicking on a chart and then accessing the menu for further filtering.  
+    IV. An error message is displayed in the filter menu and in the datatable section for a few seconds if a visitor types in something that does not match the data available. This message invites the visitor to make another attempt.
+    
+    V. Use of the drop-down menu allows for the selection of a specific breed of a cat at a time. If data is already filtered, the available choices are limited.
+    
+    VI. The 'reset all filters' button allows for all filters to be removed at once. The same option is available at the top-left corner of the screen when the menu is closed and at the datatable section.
+
+    VII. Regardless of where the filters are chosen, there is no issue in selecting a filter by clicking on a chart and then accessing the menu for further filtering.  
     
 
 2. Charts
@@ -154,14 +156,17 @@ However I have inspected the javascript and jQuery code using jsLint and jsHint 
 
 ## Deployment 
 
-The project was deployed through the Github pages.
+This project was deployed through the Github pages.
+It can be download or cloned using the relevant Github option at the top-right of the project page. 
+
 The project is live here: https://nuagesdencre.github.io/CI_InteractiveFrontend/
 
 
 ## Hurdles
 
 - GitHub organisation: I realised quite far in the project that the git commits require a new branch for every new feature or bug for a clearer understanding. 
-- Overall UX: After presenting my webpage to a few children, I quickly noticed 2 things: their attention span is limited, which means they can normally focus on one element (or image) at a time. This is why I decided to go ahead with a cleaner, powerpoint-like presentation instead of the initial scrolling-down amalgamation of the charts. I discovered the plugin 'pagepiling' while experimenting with different approaches that also allowed for navigation using the keyboard instead of the mouse or touchscreen.
+- Overall UX: After presenting my webpage to a few children, I quickly noticed 2 things: their attention span is limited, which means they can normally focus on one element (or image) at a time. This is why I decided to go ahead with a cleaner, powerpoint-like presentation instead of the initial scrolling-down amalgamation of the charts. I discovered the plugin 'pagePiling' while experimenting with different approaches that also allowed for navigation using the keyboard instead of the mouse or touchscreen.
+- After filling in the pre-submission checklist, I noticed that there was no error message displayed when an erroneous country name, or something else that didn't correspond to the data available, was provided by a visitor. I added a message on both the filter menu and the datatable section to remedy to the situation.
   
 ## Credits and Content
 
