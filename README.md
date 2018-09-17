@@ -146,9 +146,9 @@ However I have inspected the javascript and jQuery code using jsLint and jsHint 
 
 * Errors and warnings found using [Nu Html Checker](https://validator.w3.org/)
   
-  The following errors are being ignored as no alternative seem suitable in the context of this project.
+  The following errors where picked up and corrected accordingly.
   > Error: The element a must not appear as a descendant of the button element.
-  
+
   > Error: Element badge not allowed as child of element p in this context.
 
 
